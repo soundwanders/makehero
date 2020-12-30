@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="assets/herostyle.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type="text/css" href = "assets/herostyle.css">
+    <script src = "assets/makehero.js"></script>
 </head>
 
 <title>
@@ -16,119 +12,73 @@
 </title>
 
 <body>
-<div class = "container">
+
+<!-- project container -->
+<div class = "projectContainer">
+
+    <div class = "container-stats">
     <!-- stats -->
-    <div id = "heroStats">
-
-        <div class = "row"> 
-            <div class="col-sm-4 agility">
-                Agility
-            </div>
-        </div> 
-
-        <div class = "row">
-            <div class="col-sm-4 endurance">
-                Endurance
-            </div>
-        </div> 
-
-        <div class = "row">
-            <div class="col-sm-4 intelligence">
-                Intelligence
-            </div>
+       <div class = "strength">
+            Strength
         </div>
 
-        <div class = "row">
-            <div class="col-sm-4 luck">
-                Luck
-            </div>
-        </div> 
+        <div class = "vitality">
+            Vitality
+        </div>
 
-        <div class = "row">
-            <div class="col-sm-4 strength">
-                Strength
-            </div>
-        </div> 
+        <div class = "agility">
+            Agility
+        </div>
 
+        <div class = "intelligence">
+            Intelligence
+        </div>
+
+        <div class = "luck">
+            Luck
+        </div>
     </div>
-</div>
 
-<div class = "container">
-    <!-- build hero display -->
-    <div id = "buildHero">
-        
-        <div class = "row">
-            <div class="col-sm-8 head">
-                Head
-            </div>
+    <!-- create hero display -->
+    <div class = "container-hero">
+        <div class = "heroHead">
+            Head
         </div>
 
-        <div class = "row">
-            <div class="col-sm-8 body">
-                Body
-            </div>
+        <div class = "heroBody">
+            Body
         </div>
 
-        <div class = "row">
-            <div class="col-sm-8 legs">
-                Legs
-            </div>
+        <div class = "heroLegs">
+            Legs
         </div>
 
-        <div class = "row">
-            <div class = "col-sm-8 weapon">
-                Weapon
-            </div>
+        <div class = "weapon">
+            Weapon
         </div>
-
     </div>
-</div>
 
-<div class = "container">
     <!-- hero class choices -->
-    <div id = "chooseClass">
-        <div class = "row">
-            <div class="col-sm-2 archer">
-                Archer
-            </div>
+    <div class = "container-classes">
+
+        <div class = "assassin">
+            Assassin
         </div>
 
-        <div class = "row">
-            <div class="col-sm-2 assassin">
-                Assassin
-            </div>
+        <div class = "knight">
+            Knight
         </div>
 
-        <div class = "row">
-            <div class="col-sm-2 berserker">
-                Berserker
-            </div>
+        <div class = "ninja">
+            Ninja
         </div>
 
-        <div class = "row">
-            <div class ="col-sm-2 druid">
-                Druid
-            </div>
+        <div class = "samurai">
+            Samurai
         </div>
-
-        <div class = "row">
-            <div class = "col-sm-2 gladiator">
-                Gladiator
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "col-sm-2 oracle">
-                Oracle
-            </div>
-        </div>
-
     </div>
-
 </div>
 
 </body>
 
 </html>
-
-<html>
