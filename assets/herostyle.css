@@ -6,7 +6,7 @@ html {
 
 /* Hero Stats */
 .container-stats {
-    background-color: rgb(108, 223, 108);
+    background-color: rgb(127, 224, 127);
     display: block;
     position: fixed;
     height: 75%;
@@ -15,35 +15,77 @@ html {
     left: 5vh;
 }
 
-.strength {
-    padding: 20px 0 20px 0;
-}
+    .strength {
+        padding: 20px 0 20px 0;
+        margin-left: 10px;
+    }
+        #strBar {
+            border: 2px solid black;
+            height: 20px;
+            width: 90%; 
+            margin-top: 15px;
+            margin-left: 10px;
+        }
 
-.vitality {
-    padding: 20px 0 20px 0;
-}
 
-.agility {
-    padding: 20px 0 20px 0;
-}
+    .vitality {
+        padding: 20px 0 20px 0;
+        margin-left: 10px;
+    }
+        #vitBar {
+            border: 2px solid black;
+            height: 20px;
+            width: 90%; 
+            margin-top: 15px;
+            margin-left: 10px;
+        }
 
-.intelligence {
-    padding: 20px 0 20px 0;
-}
+    .agility {
+        padding: 20px 0 20px 0;
+        margin-left: 10px;
+    }
+        #agiBar {
+            border: 2px solid black;
+            height: 20px;
+            width: 90%; 
+            margin-top: 15px;
+            margin-left: 10px;
+        }
 
-.luck {
-    padding: 20px 0 20px 0;
-}
+    .intelligence {
+        padding: 20px 0 20px 0;
+        margin-left: 10px;
+    }
+        #intBar {
+            border: 2px solid black;
+            height: 20px;
+            width: 90%; 
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+    .luck {
+        padding: 20px 0 20px 0;
+        margin-left: 10px;
+    }
+        #luckBar {
+            border: 2px solid black;
+            height: 20px;
+            width: 90%; 
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
 
 /* Hero Classes */
 .container-classes {
     background-color: lightblue;
     display: block;
     position: fixed;
-    top: 30vh;
-    right: 5vh;
     height: 50%;
     width: 25%;
+    top: 30vh;
+    right: 5vh;
 }
 
     .assassin {
@@ -64,10 +106,10 @@ html {
     background-color: rgb(214, 145, 145);
     display: block;
     position: fixed;
-    top: 10vh;
-    right: 85vh;
     height: 75%;
     width: 30%;
+    top: 10vh;
+    right: 85vh;
 }
     .heroHead {
         padding: 10px;
