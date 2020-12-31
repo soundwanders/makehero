@@ -1,110 +1,88 @@
 /* CSS */
 
-html {
+body {
     background-color: slate;
 }
 
 /* Hero Stats */
 .container-stats {
     background-color: rgb(127, 224, 127);
-    display: block;
     position: fixed;
     height: 75%;
-    width: 25%;
+    width: 30%;
     top: 10vh;
     left: 5vh;
 }
-
-    .strength {
-        padding: 20px 0 20px 0;
-        margin-left: 10px;
-    }
-        #strBar {
-            border: 2px solid black;
-            height: 20px;
-            width: 90%; 
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-
-    .vitality {
-        padding: 20px 0 20px 0;
-        margin-left: 10px;
-    }
-        #vitBar {
-            border: 2px solid black;
-            height: 20px;
-            width: 90%; 
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-    .agility {
-        padding: 20px 0 20px 0;
-        margin-left: 10px;
-    }
-        #agiBar {
-            border: 2px solid black;
-            height: 20px;
-            width: 90%; 
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-    .intelligence {
-        padding: 20px 0 20px 0;
-        margin-left: 10px;
-    }
-        #intBar {
-            border: 2px solid black;
-            height: 20px;
-            width: 90%; 
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-    .luck {
-        padding: 20px 0 20px 0;
-        margin-left: 10px;
-    }
-        #luckBar {
-            border: 2px solid black;
-            height: 20px;
-            width: 90%; 
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-
-/* Hero Classes */
-.container-classes {
-    background-color: lightblue;
-    display: block;
+/* All Stat Bars */
+.stats {
+    display: inline-flex;
     position: fixed;
-    height: 50%;
-    width: 25%;
-    top: 30vh;
-    right: 5vh;
+    border: 2px solid black;
+    height: 30px;
+    width: 60vh; 
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
-    .assassin {
-        padding: 20px 0 20px 0;
+    /* Strength , Empty Frame */
+    .str {
+        top: 10vh;
+        left: 5vh;
     }
-    .knight {
-        padding: 20px 0 20px 0;
+        /* Fill Strength Bar */
+        #strBar {
+        top: 10vh;
+        left: 5vh;
+        }
+
+    /* Vitality , Empty Frame */
+    .vit {
+        top: 25vh;
+        left: 5vh;
     }
-    .ninja {
-        padding: 20px 0 20px 0;
+        /* Fill Vitality Stat Bar */
+        #vitBar {
+        top: 25vh;
+        left: 5vh;
+        }
+
+    /* Agility , Empty Frame */ 
+    .agi {
+        top: 40vh;
+        left: 5vh;
     }
-    .samurai {
-        padding: 20px 0 20px 0;
+        /* Fill Agility Stat Bar */
+        #agiBar {
+        top: 40vh;
+        left: 5vh;
+        }
+
+    /* Intelligence , Empty Frame */
+    .int {
+        top: 55vh;
+        left: 5vh;
     }
+        /* Fill Intelligence Stat Bar */
+        #intBar {
+        top: 55vh;
+        left: 5vh;
+        }
+
+    /* Luck , Empty Frame */
+    .luck {
+        top: 70vh;
+        left: 5vh;
+    }
+        /* Fill Luck Stat Bar */
+        #luckBar {
+        top: 70vh;
+        left: 5vh;
+        }
 
 /* Build A Hero */
 .container-hero {
     background-color: rgb(218, 141, 141);
-    display: block;
+    display:flexbox;
     position: fixed;
     height: 75%;
     width: 30%;
@@ -122,4 +100,29 @@ html {
     }
     .weapon {
         padding: 10px;
+    }
+
+/* Hero Classes */
+.container-classes {
+    background-color: lightblue;
+    display:flexbox;
+    position: fixed;
+    height: 50%;
+    width: 25%;
+    top: 30vh;
+    right: 5vh;
+    padding: 10px;
+}
+
+    .assassin {
+        padding: 20px 0 20px 0;
+    }
+    .knight {
+        padding: 20px 0 20px 0;
+    }
+    .ninja {
+        padding: 20px 0 20px 0;
+    }
+    .samurai {
+        padding: 20px 0 20px 0;
     }

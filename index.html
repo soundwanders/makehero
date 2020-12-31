@@ -1,52 +1,52 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    <link rel = "stylesheet" type="text/css" href = "assets/herostyle.css">
-    <script src = "assets/makehero.js"></script>
+    <link rel = "stylesheet" type="text/css" href = "./assets/herostyle.css">
+    <script src = "./assets/makehero.js"></script>
 </head>
 
 <title>
-    Make A Hero
+    Make Your Hero
 </title>
 
 <body>
 
 <!-- project container -->
 <div class = "projectContainer">
-
     <div class = "container-stats">
     <!-- stats -->
-       <div class = "strength">
+       <div class = "stats str">
             Strength
-            <div id = "strBar">
-
+            <div id = "strBar" onClick = "addStr()">
+            
             </div>
         </div>
 
-        <div class = "vitality">
+        <div class = "stats vit">
             Vitality
             <div id = "vitBar">
 
             </div>
         </div>
 
-        <div class = "agility">
+        <div class = "stats agi">
             Agility
             <div id = "agiBar">
 
             </div>
         </div>
 
-        <div class = "intelligence">
+        <div class = "stats int">
             Intelligence
             <div id = "intBar">
 
             </div>
         </div>
 
-        <div class = "luck">
+        <div class = "stats luck">
             Luck
             <div id = "luckBar">
 
@@ -75,7 +75,6 @@
 
     <!-- hero class choices -->
     <div class = "container-classes">
-
         <div class = "assassin">
             Assassin
         </div>
@@ -93,6 +92,27 @@
         </div>
     </div>
 </div>
+
+<!-- Stat Buttons -->
+
+<!-- Strength -->
+<button type = "button" id = "addStr" title = "Add Strength"> o </button>
+<button type = "button" id = "subtractStr" title = "Subtract Strength"> x </button>
+<!-- Vitality -->
+<button type = "button" id = "addVit" title = "Add Vitality"> o </button>
+<button type = "button" id = "subtractVit" title = "Subtract Vitality"> x </button>
+
+<!-- Agility -->
+<button type = "button" id = "addAgi" title = "Add Agility"> o </button>
+<button type = "button" id = "subtractAgi" title = "Subtract Agility"> x </button>
+
+<!-- Intelligence -->
+<button type = "button" id = "addInt" title = "Add Intelligence"> o </button>
+<button type = "button" id = "subtractInt" title = "Subtract Intelligence"> x </button>
+
+<!-- Luck -->
+<button type = "button" id = "addLuck" title = "Add Luck"> o </button>
+<button type = "button" id = "subtractLuck" title = "Subtract Luck"> x </button>
 
 </body>
 
