@@ -16,46 +16,41 @@
 
 <!-- project container -->
 <div class = "projectContainer">
-    <div class = "container-stats">
+    <div class = "statsContainer">
     <!-- stats -->
-       <div class = "stats str">
+       <div class = "stats str" id = "strFrame" onClick = "addStr()">
             Strength
-            <div id = "strBar" onClick = "addStr()">
-            
+            <div id = "strBar">
             </div>
         </div>
 
-        <div class = "stats vit">
+        <div class = "stats vit" id = "vitFrame" onClick = "addVit()">
             Vitality
             <div id = "vitBar">
-
             </div>
         </div>
 
-        <div class = "stats agi">
+        <div class = "stats agi" id = "agiFrame" onClick = "addAgi()">
             Agility
             <div id = "agiBar">
-
             </div>
         </div>
 
-        <div class = "stats int">
+        <div class = "stats int" id = "intFrame" onClick = "addInt()">
             Intelligence
             <div id = "intBar">
-
             </div>
         </div>
 
-        <div class = "stats luck">
+        <div class = "stats luck" id = "lukFrame" onClick = "addLuck()">
             Luck
-            <div id = "luckBar">
-
+            <div id = "lukBar">
             </div>
         </div>
     </div>
 
     <!-- create hero display -->
-    <div class = "container-hero">
+    <div class = "heroContainer">
         <div class = "heroHead">
             Head
         </div>
@@ -74,7 +69,7 @@
     </div>
 
     <!-- hero class choices -->
-    <div class = "container-classes">
+    <div class = "jobContainer">
         <div class = "assassin">
             Assassin
         </div>
@@ -98,6 +93,7 @@
 <!-- Strength -->
 <button type = "button" id = "addStr" title = "Add Strength"> o </button>
 <button type = "button" id = "subtractStr" title = "Subtract Strength"> x </button>
+
 <!-- Vitality -->
 <button type = "button" id = "addVit" title = "Add Vitality"> o </button>
 <button type = "button" id = "subtractVit" title = "Subtract Vitality"> x </button>

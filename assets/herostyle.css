@@ -1,26 +1,27 @@
 /* CSS */
-
-body {
-    background-color: slate;
+html {
+    background-color: rgb(12, 8, 22);
 }
 
 /* Hero Stats */
-.container-stats {
+.statsContainer {
     background-color: rgb(127, 224, 127);
+    display: block;
     position: fixed;
     height: 75%;
     width: 30%;
     top: 10vh;
     left: 5vh;
 }
-/* All Stat Bars */
+/* Stat Bars */
 .stats {
-    display: inline-flex;
+    background-color: rgb(189, 199, 209);
+    display: inline-block;
     position: fixed;
     border: 2px solid black;
-    height: 30px;
-    width: 60vh; 
-    margin-top: 15px;
+    height: 35px;
+    width: 25%;
+    margin-top: 25px;
     margin-left: 20px;
 }
 
@@ -31,8 +32,16 @@ body {
     }
         /* Fill Strength Bar */
         #strBar {
-        top: 10vh;
-        left: 5vh;
+            display: inline-block;
+            position: fixed;
+            border: 2px solid rgb(180, 92, 173);
+            height: 35px;
+            width: 25%;
+            top: 10vh;
+            left: 5vh;
+            margin-top: 25px;
+            margin-left: 20px;
+            z-index: -1;
         }
 
     /* Vitality , Empty Frame */
@@ -40,10 +49,18 @@ body {
         top: 25vh;
         left: 5vh;
     }
-        /* Fill Vitality Stat Bar */
+        /* Fill Vitality Bar */
         #vitBar {
-        top: 25vh;
-        left: 5vh;
+            display: inline-block;
+            position: fixed;
+            border: 2px solid rgb(180, 92, 173);
+            height: 35px;
+            width: 25%;
+            top: 25vh;
+            left: 5vh;
+            margin-top: 25px;
+            margin-left: 20px;
+            z-index: -1;
         }
 
     /* Agility , Empty Frame */ 
@@ -51,10 +68,18 @@ body {
         top: 40vh;
         left: 5vh;
     }
-        /* Fill Agility Stat Bar */
+        /* Fill Agility Bar */
         #agiBar {
-        top: 40vh;
-        left: 5vh;
+            display: inline-block;
+            position: fixed;
+            border: 2px solid rgb(180, 92, 173);
+            height: 35px;
+            width: 25%;
+            top: 40vh;
+            left: 5vh;
+            margin-top: 25px;
+            margin-left: 20px;
+            z-index: -1;
         }
 
     /* Intelligence , Empty Frame */
@@ -62,10 +87,18 @@ body {
         top: 55vh;
         left: 5vh;
     }
-        /* Fill Intelligence Stat Bar */
+        /* Fill Intelligence Bar */
         #intBar {
-        top: 55vh;
-        left: 5vh;
+            display: inline-block;
+            position: fixed;
+            border: 2px solid rgb(180, 92, 173);
+            height: 35px;
+            width: 25%;
+            top: 55vh;
+            left: 5vh;
+            margin-top: 25px;
+            margin-left: 20px;
+            z-index: -1;
         }
 
     /* Luck , Empty Frame */
@@ -73,22 +106,31 @@ body {
         top: 70vh;
         left: 5vh;
     }
-        /* Fill Luck Stat Bar */
-        #luckBar {
-        top: 70vh;
-        left: 5vh;
+        /* Fill Luck Bar */
+        #lukBar {
+            display: inline-block;
+            position: fixed;
+            border: 2px solid rgb(180, 92, 173);
+            height: 35px;
+            width: 25%;
+            top: 70vh;
+            left: 5vh;
+            margin-top: 25px;
+            margin-left: 20px;
+            z-index: -1;
         }
 
 /* Build A Hero */
-.container-hero {
+.heroContainer {
     background-color: rgb(218, 141, 141);
-    display:flexbox;
+    display: block;
     position: fixed;
-    height: 75%;
+    height: 55%;
     width: 30%;
-    top: 10vh;
-    right: 85vh;
+    top: 20%;
+    right: 35%;
 }
+
     .heroHead {
         padding: 10px;
     }
@@ -103,15 +145,15 @@ body {
     }
 
 /* Hero Classes */
-.container-classes {
+.jobContainer {
     background-color: lightblue;
-    display:flexbox;
+    padding: 10px;
+    display: block;
     position: fixed;
     height: 50%;
     width: 25%;
-    top: 30vh;
-    right: 5vh;
-    padding: 10px;
+    top: 20%;
+    right: 5%;
 }
 
     .assassin {
