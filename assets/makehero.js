@@ -1,137 +1,134 @@
 // js
 
-// ADD STATS
-let strWidth = 0;
-let vitWidth = 0;
-let agiWidth = 0;
-let intWidth = 0;
-let lukWidth = 0;
+// Create Empty Variables for Each Stat
+// numbers are used to manipulate width of stat bars
+// to show addition and removal of stat points
+let strength = 0;
+let vitality = 0;
+let agility = 0;
+let intelligence = 0;
+let luck = 0;
 
-// Add Strength (in Increments) on click of Stat Bar
+// get empty strength stat bar frame
+const strengthFrame = document.getElementById("strFrame");
+strengthFrame.addEventListener('click', addStr);
+
+// get empty strength stat bar frame
+const vitalityFrame = document.getElementById("vitFrame");
+vitalityFrame.addEventListener('click', addVit);
+
+// get empty agility stat bar frame
+const agilityFrame = document.getElementById("agiFrame");
+agilityFrame.addEventListener('click', addAgi);
+
+// get empty intelligence bar frame
+const intelligenceFrame = document.getElementById("intFrame");
+intelligenceFrame.addEventListener('click', addInt);
+
+// get empty luck stat bar frame
+const luckFrame = document.getElementById("lukFrame");
+luckFrame.addEventListener('click', addLuk);
+
+
+// Functions -- Add Stats
+// Add Strength
 function addStr() {
-  let strengthFrame = document.getElementById("strFrame");
+  // get hidden strength stat bar div
+  // hidden until user adds stats, then becomes visible
   let strengthBar = document.getElementById("strBar");
-  
-  strengthFrame.addEventListener('click', function(ev) {
-    if (ev.target.id === "strFrame") {
-      if (strWidth < 25) {
-        strengthFrame.onclick (
-        strWidth += 1 ,
-        console.log(strWidth) ,
-        strengthBar.style.width = strWidth + "%" ,
-        strengthBar.style.backgroundColor = "rgb(180, 92, 173)"
-        )
-        console.log("Strength added");
-      }
-      else {
-        console.log("Strength is at max");
-        return;
-      }
-    }
-  })
+
+  // while width is less than max width (30%) , add increments of 3
+  // and change width, background color of the empty strength div
+  // to represent the increase of strength stat
+  while (strength < 30) {
+    strength += 3;
+    strengthBar.style.width = strength + "%" ,
+    strengthBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Increased Strength");
+    console.log(strength);
+    return;
+  }
+  // if strength is 30 (max width) prevent additional strength
+  if (strength >= 30) {
+    console.log("Maxed Strength");
+  }
 };
 
 // Add Vitality
 function addVit() {
-  let vitalityFrame = document.getElementById("vitFrame");
   let vitalityBar = document.getElementById("vitBar");
 
-  vitalityFrame.addEventListener('click', function(e) {
-    if (e.target.id === "vitFrame") {
-      if (vitWidth < 25) {
-        vitalityFrame.onclick (
-        vitWidth += 1 ,
-        console.log(vitWidth) ,
-        vitalityBar.style.width = vitWidth + "%" ,
-        vitalityBar.style.backgroundColor = "rgb(180, 92, 173)"
-        )
-        console.log("Vitality added");
-      }
-      else {
-        console.log("Vitality is maxed");
-        return;
-      }
-    }
-  })
+  while (vitality < 30) {
+    vitality += 3;
+    vitalityBar.style.width = vitality + "%" ,
+    vitalityBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Increased Vitality");
+    console.log(vitality);
+    return;
+  }
+  if (vitality >= 30) {
+    console.log("Maxed Vitality");
+  }
 };
 
 // Add Agility
 function addAgi() {
-  let agilityFrame = document.getElementById("agiFrame");
   let agilityBar = document.getElementById("agiBar");
 
-  agilityFrame.addEventListener('click', function(e) {
-    if (e.target.id === "agiFrame") {
-      if (agiWidth < 25) {
-        agilityFrame.onclick (
-        agiWidth += 1 ,
-        console.log(agiWidth) ,
-        agilityBar.style.width = agiWidth + "%" ,
-        agilityBar.style.backgroundColor = "rgb(180, 92, 173)"
-        )
-        console.log("Agility added");
-      }
-      else {
-        console.log("Agility is at max");
-        return;
-      }
-    }
-  })
+  while (agility < 30) {
+    agility += 3;
+    agilityBar.style.width = agility + "%" ,
+    agilityBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Increased Agility");
+    console.log(agility);
+    return;
+  }
+  if (agility >= 30) {
+    console.log("Maxed Agility");
+  }
 };
 
 // Add Intelligence
+
 function addInt() {
-  let intelligenceFrame = document.getElementById("intFrame");
   let intelligenceBar = document.getElementById("intBar");
 
-  intelligenceFrame.addEventListener('click' , function(e) {
-    if (e.target.id === "intFrame") {
-      if (intWidth < 25) {
-        intelligenceFrame.onclick (
-          intWidth += 1 ,
-          console.log(intWidth) ,
-          intelligenceBar.style.width = intWidth + "%" ,
-          intelligenceBar.style.backgroundColor = "rgb(180, 92, 173)" ,
-          console.log("Intelligence added") ,
-          )
-      } else {
-        console.log("Intelligence is at max");
-        return;
-      }
-    }
-  })
+  while (intelligence < 30) {
+    intelligence += 3;
+    intelligenceBar.style.width = intelligence + "%" ,
+    intelligenceBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Increased Intelligence");
+    console.log(intelligence);
+    return;
+  }
+  if (intelligence >= 30) {
+    console.log("Maxed Intelligence");
+  }
 };
 
 // Add Luck
-function addLuck() {
-  let luckFrame = document.getElementById("lukFrame");
+function addLuk() {
   let luckBar = document.getElementById("lukBar");
 
-  luckFrame.addEventListener('click', function(e) {
-    if (e.target.id === "lukFrame") {
-      if (lukWidth < 25) {
-        luckFrame.onclick (
-        lukWidth += 1 ,
-        console.log(lukWidth) ,
-        luckBar.style.width = lukWidth + "%" ,
-        luckBar.style.backgroundColor = "rgb(180, 92, 173)"
-        )
-        console.log("Luck added");
-      }
-      else {
-        console.log("Luck is at max");
-        return;
-      }
-    }
-  })
+  while (luck < 30) {
+    luck += 3;
+    luckBar.style.width = luck + "%" ,
+    luckBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Increased Luck");
+    console.log(luck);
+    return;
+  }
+  if (luck >= 30) {
+    console.log("Maxed Luck");
+  }
 };
-
 
 // SUBTRACT STATS
 
 // Subtract Strength
 function subtractStr() {
 };
+
 // Subtract Vitality
 function subtractVit() {
 };

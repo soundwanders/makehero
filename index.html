@@ -4,52 +4,52 @@
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    <link rel = "stylesheet" type="text/css" href = "./assets/herostyle.css">
-    <script src = "./assets/makehero.js"></script>
+    <link rel = "stylesheet" type="text/css" href = "/assets/herostyle.css">
 </head>
 
 <title>
-    Make Your Hero
+    makeHero
 </title>
 
 <body>
 
 <!-- project container -->
 <div class = "projectContainer">
-    <div class = "statsContainer">
+
     <!-- stats -->
-       <div class = "stats str" id = "strFrame" onClick = "addStr()">
+    <div class = "statsContainer">
+       <div class = "stats str" id = "strFrame">
             Strength
             <div id = "strBar">
             </div>
         </div>
 
-        <div class = "stats vit" id = "vitFrame" onClick = "addVit()">
+        <div class = "stats vit" id = "vitFrame">
             Vitality
             <div id = "vitBar">
             </div>
         </div>
 
-        <div class = "stats agi" id = "agiFrame" onClick = "addAgi()">
+        <div class = "stats agi" id = "agiFrame">
             Agility
             <div id = "agiBar">
             </div>
         </div>
 
-        <div class = "stats int" id = "intFrame" onClick = "addInt()">
+        <div class = "stats int" id = "intFrame">
             Intelligence
             <div id = "intBar">
             </div>
         </div>
 
-        <div class = "stats luck" id = "lukFrame" onClick = "addLuck()">
+        <div class = "stats luck" id = "lukFrame">
             Luck
             <div id = "lukBar">
             </div>
         </div>
     </div>
 
-    <!-- create hero display -->
+    <!-- create a hero display -->
     <div class = "heroContainer">
         <div class = "heroHead">
             Head
@@ -110,6 +110,8 @@
 <button type = "button" id = "addLuck" title = "Add Luck"> o </button>
 <button type = "button" id = "subtractLuck" title = "Subtract Luck"> x </button>
 
+
+ <script src = "/assets/makehero.js"></script>
 </body>
 
 </html>
