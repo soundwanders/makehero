@@ -176,7 +176,7 @@ html {
 /* --- BUTTONS --- */
 
 /* All Buttons, Grouped by Class Name */
-.buttons {
+.button {
     background-color: void;
     display: inline-block;
     position: fixed;
