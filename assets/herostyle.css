@@ -177,14 +177,8 @@ html {
 
 /* All Buttons, Grouped by Class Name */
 .button {
-    background-color: void;
-    display: inline-block;
-    position: fixed;
-    height: 75%;
-    width: 36%;
-    top: 10vh;
-    left: 5vh;
-    margin: 0 auto;
+    background-color: white;
+    padding: 5px 10px;
 }
 
 /* Strength Buttons */
