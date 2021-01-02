@@ -1,6 +1,8 @@
 // js
 
-// Create Empty Variables for Each Stat
+// --- STATS ---
+
+// ## Create Empty Variables for Each Stat ##
 // numbers are used to manipulate width of stat bars
 // to show addition and removal of stat points
 let strength = 0;
@@ -9,28 +11,81 @@ let agility = 0;
 let intelligence = 0;
 let luck = 0;
 
-// get empty strength stat bar frame
-const strengthFrame = document.getElementById("strFrame");
-strengthFrame.addEventListener('click', addStr);
+// ## Add Event Listeners to Stat Bars ##
 
-// get empty strength stat bar frame
-const vitalityFrame = document.getElementById("vitFrame");
-vitalityFrame.addEventListener('click', addVit);
+  // Strength
+  // get empty Strength stat bar frame, serves as skeleton
+  // displays on screen same style as if stats were empty/equal to 0
+  const strengthFrame = document.getElementById("strFrame");
+  // run function addStr to add Strength points when stat bar is clicked
+  strengthFrame.addEventListener('click', addStr);
+  strengthFrame.addEventListener('contextmenu', subtractStr);
 
-// get empty agility stat bar frame
-const agilityFrame = document.getElementById("agiFrame");
-agilityFrame.addEventListener('click', addAgi);
+  // Vitality
+  const vitalityFrame = document.getElementById("vitFrame");
+  vitalityFrame.addEventListener('click', addVit);
+  vitalityFrame.addEventListener('contextmenu', subtractVit);
 
-// get empty intelligence bar frame
-const intelligenceFrame = document.getElementById("intFrame");
-intelligenceFrame.addEventListener('click', addInt);
+  // Agility
+  const agilityFrame = document.getElementById("agiFrame");
+  agilityFrame.addEventListener('click', addAgi);
+  agilityFrame.addEventListener('contextmenu', subtractAgi);
 
-// get empty luck stat bar frame
-const luckFrame = document.getElementById("lukFrame");
-luckFrame.addEventListener('click', addLuk);
+  // Intelligence
+  const intelligenceFrame = document.getElementById("intFrame");
+  intelligenceFrame.addEventListener('click', addInt);
+  intelligenceFrame.addEventListener('contextmenu', subtractInt);
 
+  // Luck
+  const luckFrame = document.getElementById("lukFrame");
+  luckFrame.addEventListener('click', addLuk);
+  luckFrame.addEventListener('contextmenu', subtractLuk);
 
-// Functions -- Add Stats
+// ## Add Event Listeners to Stat Buttons ##
+
+  // Increase Strength Button
+    const upStr = document.getElementById("upStr");
+    upStr.addEventListener('click', addStr);
+
+  // Decrease Strength Button
+    const downStr = document.getElementById("downStr");
+    downStr.addEventListener('click', subtractStr);
+
+  // Increase Vitality Button
+    const upVit = document.getElementById("upVit");
+    upVit.addEventListener('click', addVit);
+
+  // Decrease Vitality Button
+    const downVit = document.getElementById("downVit");
+    downVit.addEventListener('click', subtractVit);
+
+  // Increase Agility Button
+    const upAgi = document.getElementById("upAgi");
+    upAgi.addEventListener('click', addAgi);
+
+  // Decrease Agility Button
+    const downAgi = document.getElementById("downAgi");
+    downAgi.addEventListener('click', subtractAgi);
+
+  // Increase Intelligence Button
+    const upInt = document.getElementById("upInt");
+    upInt.addEventListener('click', addInt);
+
+  // Decrease Intelligence Button
+    const downInt = document.getElementById("downInt");
+    downInt.addEventListener('click', subtractInt);
+
+  // Increase Luck Button
+    const upLuk = document.getElementById("upLuk");
+    upLuk.addEventListener('click', addLuk);
+
+  // Decrease Luck Button
+    const downLuk = document.getElementById("downLuk");
+    downLuk.addEventListener('click', subtractLuk);
+
+// --- FUNCTIONS ---
+// ## Add Stats ##
+
 // Add Strength
 function addStr() {
   // get hidden strength stat bar div
@@ -89,7 +144,6 @@ function addAgi() {
 };
 
 // Add Intelligence
-
 function addInt() {
   let intelligenceBar = document.getElementById("intBar");
 
@@ -123,21 +177,94 @@ function addLuk() {
   }
 };
 
-// SUBTRACT STATS
+// ## Subtract Stats ##
 
 // Subtract Strength
-function subtractStr() {
+function subtractStr(e) {
+  let strengthBar = document.getElementById("strBar");
+  e.preventDefault();
+
+  while (strength > 0) {
+    strength -= 3;
+    strengthBar.style.width = strength + "%" ,
+    strengthBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Decreased Strength");
+    console.log(strength);
+    return;
+  }
+  if (strength <= 0) {
+    console.log("Zero Strength");
+  }
 };
 
 // Subtract Vitality
-function subtractVit() {
+function subtractVit(e) {
+  let vitalityBar = document.getElementById("vitBar");
+  e.preventDefault();
+
+  while (vitality > 0) {
+    vitality-= 3;
+    vitalityBar.style.width = vitality + "%" ,
+    vitalityBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Decreased Vitality");
+    console.log(vitality);
+    return;
+  }
+  if (vitality <= 0) {
+    console.log("Zero Vitality");
+  }
 };
+
 // Subtract Agility
-function subtractAgi() {
+function subtractAgi(e) {
+  let agilityBar = document.getElementById("agiBar");
+  e.preventDefault();
+
+  while (agility > 0) {
+    agility -= 3;
+    agilityBar.style.width = agility + "%" ,
+    agilityBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Decreased Agility");
+    console.log(agility);
+    return;
+  }
+  if (agility <= 0) {
+    console.log("Zero Agility");
+  }
 };
+
 // Subtract Intelligence
-function subtractInt() {
+function subtractInt(e) {
+  let intelligenceBar = document.getElementById("intBar");
+  e.preventDefault();
+
+  while (intelligence > 0) {
+    intelligence -= 3;
+    intelligenceBar.style.width = intelligence + "%" ,
+    intelligenceBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Decreased Intelligence");
+    console.log(intelligence);
+    return;
+  }
+  if (intelligence <= 0) {
+    console.log("Zero Intelligence");
+  }
 };
+
 // Subtract Luck
-function subtractLuck() {
+function subtractLuk(e) {
+  let luckBar = document.getElementById("lukBar");
+  e.preventDefault();
+
+  while (luck > 0) {
+    luck -= 3;
+    luckBar.style.width = luck + "%" ,
+    luckBar.style.backgroundColor = "rgb(180, 92, 173)";
+    console.log("Decreased Luck");
+    console.log(luck);
+    return;
+  }
+  if (luck <= 0) {
+    console.log("Zero Luck");
+  }
 };

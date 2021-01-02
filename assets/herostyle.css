@@ -3,18 +3,20 @@ html {
     background-color: rgb(12, 8, 22);
 }
 
-/* Hero Stats */
+/* --- Hero Stats Container --- */
+
 .statsContainer {
     background-color: rgb(127, 224, 127);
     display: block;
     position: fixed;
     height: 75%;
-    width: 36%;
+    width: 37%;
     top: 10vh;
-    left: 5vh;
+    left: 4vh;
     margin: 0 auto;
 }
-/* Stat Bars */
+
+/* All Stat Bars , Grouped by Class Name */
 .stats {
     background-color: rgb(189, 199, 209);
     border: 2px solid black;
@@ -23,105 +25,105 @@ html {
     height: 35px;
     width: 30%;
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 3%;
 }
-
-    /* Strength , Empty Frame */
-    .str {
+/* Strength Bar , Empty Frame */
+.str {
+    top: 10vh;
+    left: 5vh;
+}
+    /* Fill Strength Bar */
+    #strBar {
+        border: 2px solid rgb(180, 92, 173);
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
         top: 10vh;
         left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        z-index: -1;
     }
-        /* Fill Strength Bar */
-        #strBar {
-            border: 2px solid rgb(180, 92, 173);
-            display: inline;
-            position: fixed;
-            height: 35px;
-            width: 30%;
-            top: 10vh;
-            left: 5vh;
-            margin-top: 2%;
-            margin-left: 2%;
-            z-index: -1;
-        }
 
-    /* Vitality , Empty Frame */
-    .vit {
+/* Vitality Bar , Empty Frame */
+.vit {
+    top: 25vh;
+    left: 5vh;
+}
+    /* Fill Vitality Bar */
+    #vitBar {
+        display: inline;
+        position: fixed;
+        border: 2px solid rgb(180, 92, 173);
+        height: 35px;
+        width: 30%;
         top: 25vh;
         left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        z-index: -1;
     }
-        /* Fill Vitality Bar */
-        #vitBar {
-            display: inline;
-            position: fixed;
-            border: 2px solid rgb(180, 92, 173);
-            height: 35px;
-            width: 30%;
-            top: 25vh;
-            left: 5vh;
-            margin-top: 2%;
-            margin-left: 2%;
-            z-index: -1;
-        }
 
-    /* Agility , Empty Frame */ 
-    .agi {
+/* Agility Bar , Empty Frame */ 
+.agi {
+    top: 40vh;
+    left: 5vh;
+}
+    /* Fill Agility Bar */
+    #agiBar {
+        display: inline;
+        position: fixed;
+        border: 2px solid rgb(180, 92, 173);
+        height: 35px;
+        width: 30%;
         top: 40vh;
         left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        z-index: -1;
     }
-        /* Fill Agility Bar */
-        #agiBar {
-            display: inline;
-            position: fixed;
-            border: 2px solid rgb(180, 92, 173);
-            height: 35px;
-            width: 30%;
-            top: 40vh;
-            left: 5vh;
-            margin-top: 2%;
-            margin-left: 2%;
-            z-index: -1;
-        }
 
-    /* Intelligence , Empty Frame */
-    .int {
+/* Intelligence Bar , Empty Frame */
+.int {
+    top: 55vh;
+    left: 5vh;
+}
+    /* Fill Intelligence Bar */
+    #intBar {
+        display: inline;
+        position: fixed;
+        border: 2px solid rgb(180, 92, 173);
+        height: 35px;
+        width: 30%;
         top: 55vh;
         left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        z-index: -1;
     }
-        /* Fill Intelligence Bar */
-        #intBar {
-            display: inline;
-            position: fixed;
-            border: 2px solid rgb(180, 92, 173);
-            height: 35px;
-            width: 30%;
-            top: 55vh;
-            left: 5vh;
-            margin-top: 2%;
-            margin-left: 2%;
-            z-index: -1;
-        }
 
-    /* Luck , Empty Frame */
-    .luck {
+/* Luck Bar , Empty Frame */
+.luck {
+    top: 70vh;
+    left: 5vh;
+}
+    /* Fill Luck Bar */
+    #lukBar {
+        display: inline;
+        position: fixed;
+        border: 2px solid rgb(180, 92, 173);
+        height: 35px;
+        width: 30%;
         top: 70vh;
         left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        z-index: -1;
     }
-        /* Fill Luck Bar */
-        #lukBar {
-            display: inline;
-            position: fixed;
-            border: 2px solid rgb(180, 92, 173);
-            height: 35px;
-            width: 30%;
-            top: 70vh;
-            left: 5vh;
-            margin-top: 2%;
-            margin-left: 2%;
-            z-index: -1;
-        }
 
-/* Build A Hero */
+/* --- Build A Hero Container --- */
+
 .heroContainer:hidden {
     background-color: rgb(218, 141, 141);
     display: block;
@@ -145,7 +147,8 @@ html {
         padding: 10px;
     }
 
-/* Hero Classes */
+/* --- Hero Classes Container --- */
+
 .jobContainer:hidden {
     background-color: lightblue;
     padding: 10px;
@@ -168,4 +171,103 @@ html {
     }
     .samurai {
         padding: 20px 0 20px 0;
+    }
+
+/* --- BUTTONS --- */
+
+/* All Buttons, Grouped by Class Name */
+.buttons {
+    background-color: void;
+    display: inline-block;
+    position: fixed;
+    height: 75%;
+    width: 36%;
+    top: 10vh;
+    left: 5vh;
+    margin: 0 auto;
+}
+
+/* Strength Buttons */
+    #upStr {
+        position: fixed;
+        top: 15vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downStr {
+        position: fixed;
+        top: 15vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Vitality Buttons */
+    #upVit {
+        position: fixed;
+        top: 30vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downVit {
+        position: fixed;
+        top: 30vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Agility Buttons */
+    #upAgi {
+        position: fixed;
+        top: 45vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downAgi {
+        position: fixed;
+        top: 45vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Intelligence Buttons */
+    #upInt {
+        position: fixed;
+        top: 60vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downInt {
+        position: fixed;
+        top: 60vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Luck Buttons */
+    #upLuk {
+        position: fixed;
+        top: 75vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downLuk {
+        position: fixed;
+        top: 75vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
     }

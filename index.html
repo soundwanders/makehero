@@ -13,11 +13,12 @@
 
 <body>
 
-<!-- project container -->
+<!-- Project Container -->
 <div class = "projectContainer">
 
-    <!-- stats -->
+    <!-- Stats -->
     <div class = "statsContainer">
+    
        <div class = "stats str" id = "strFrame">
             Strength
             <div id = "strBar">
@@ -48,8 +49,33 @@
             </div>
         </div>
     </div>
+    
+    <!-- Add & Subract Stats Buttons -->
 
-    <!-- create a hero display -->
+    <!-- Button Container -->
+    <div class = "buttons">
+        <!-- Strength -->
+        <button type = "button" id = "upStr" title = "Increase Strength"> o </button>
+        <button type = "button" id = "downStr" title = "Decrease Strength"> x </button>
+
+        <!-- Vitality -->
+        <button type = "button" id = "upVit" title = "Increase Vitality"> o </button>
+        <button type = "button" id = "downVit" title = "Decrease Vitality"> x </button>
+
+        <!-- Agility -->
+        <button type = "button" id = "upAgi" title = "Increase Agility"> o </button>
+        <button type = "button" id = "downAgi" title = "Decrease Agility"> x </button>
+
+        <!-- Intelligence -->
+        <button type = "button" id = "upInt" title = "Increase Intelligence"> o </button>
+        <button type = "button" id = "downInt" title = "Decrease Intelligence"> x </button>
+
+        <!-- Luck -->
+        <button type = "button" id = "upLuk" title = "Increase Luck"> o </button>
+        <button type = "button" id = "downLuk" title = "Decrease Luck"> x </button>
+    </div>
+
+    <!-- Create a Hero Display -->
     <div class = "heroContainer">
         <div class = "heroHead">
             Head
@@ -68,7 +94,7 @@
         </div>
     </div>
 
-    <!-- hero class choices -->
+    <!-- Hero Class Choices -->
     <div class = "jobContainer">
         <div class = "assassin">
             Assassin
@@ -87,29 +113,6 @@
         </div>
     </div>
 </div>
-
-<!-- Stat Buttons -->
-
-<!-- Strength -->
-<button type = "button" id = "addStr" title = "Add Strength"> o </button>
-<button type = "button" id = "subtractStr" title = "Subtract Strength"> x </button>
-
-<!-- Vitality -->
-<button type = "button" id = "addVit" title = "Add Vitality"> o </button>
-<button type = "button" id = "subtractVit" title = "Subtract Vitality"> x </button>
-
-<!-- Agility -->
-<button type = "button" id = "addAgi" title = "Add Agility"> o </button>
-<button type = "button" id = "subtractAgi" title = "Subtract Agility"> x </button>
-
-<!-- Intelligence -->
-<button type = "button" id = "addInt" title = "Add Intelligence"> o </button>
-<button type = "button" id = "subtractInt" title = "Subtract Intelligence"> x </button>
-
-<!-- Luck -->
-<button type = "button" id = "addLuck" title = "Add Luck"> o </button>
-<button type = "button" id = "subtractLuck" title = "Subtract Luck"> x </button>
-
 
  <script src = "/assets/makehero.js"></script>
 </body>
