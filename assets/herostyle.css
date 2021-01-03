@@ -265,3 +265,12 @@ html {
         margin-right: 2px;
         margin-left: 10px;
     }
+
+.ninjaHead {
+    position: fixed;
+    top: -70%;
+    left: 20vh;
+    transform: scale(0.15, 0.15);
+    -ms-transform: scale(0.15, 0.15);
+    -webkit-transform: scale(0.15, 0.15);
+}
