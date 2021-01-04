@@ -266,11 +266,25 @@ html {
         margin-left: 10px;
     }
 
+
+/* Hero Body Parts */
+
+/* Ninja */
 .ninjaHead {
     position: fixed;
     top: -70%;
     left: 20vh;
-    transform: scale(0.15, 0.15);
+    transform: scale(0.05, 0.05);
     -ms-transform: scale(0.15, 0.15);
     -webkit-transform: scale(0.15, 0.15);
+}
+
+/* Samurai */
+.samuraiHead {
+    position: fixed;
+    top: -30%;
+    left: 60vh;
+    transform: scale(0.25, 0.25);
+    -ms-transform: scale(0.25, 0.25);
+    -webkit-transform: scale(0.25, 0.25);
 }
