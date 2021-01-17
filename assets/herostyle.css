@@ -4,7 +4,6 @@ html {
 }
 
 /* --- Hero Stats Container --- */
-
 .statsContainer {
     background-color: rgb(127, 224, 127);
     display: block;
@@ -18,6 +17,7 @@ html {
 
 /* All Stat Bars , Grouped by Class Name */
 .stats {
+    color:rgb(69, 139, 209);
     background-color: rgb(189, 199, 209);
     border: 2px solid black;
     display: inline;
@@ -149,7 +149,7 @@ html {
 
 /* --- Hero Classes Container --- */
 
-.jobContainer:hidden {
+.jobContainer {
     background-color: lightblue;
     padding: 10px;
     display: block;
