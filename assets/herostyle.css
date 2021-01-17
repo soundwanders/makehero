@@ -9,17 +9,17 @@ html {
     background-color: rgb(127, 224, 127);
     display: block;
     position: fixed;
-    height: 75%;
+    height: 80%;
     width: 37%;
-    top: 10vh;
+    top: 5vh;
     left: 4vh;
     margin: 0 auto;
 }
 
 /* All Stat Bars , Grouped by Class Name */
 .stats {
-    background-color: rgb(189, 199, 209);
-    border: 2px solid black;
+    background-color: rgb(211, 216, 221);
+    border: 2px solid rgb(156, 196, 219);
     display: inline;
     position: fixed;
     height: 35px;
@@ -27,19 +27,20 @@ html {
     margin-top: 2%;
     margin-left: 3%;
 }
+
 /* Strength Bar , Empty Frame */
 .str {
-    top: 10vh;
+    top: 13vh;
     left: 5vh;
 }
     /* Fill Strength Bar */
     #strBar {
-        border: 2px solid rgb(180, 92, 173);
+        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
         width: 30%;
-        top: 10vh;
+        top: 13vh;
         left: 5vh;
         margin-top: 2%;
         margin-left: 3%;
@@ -48,17 +49,17 @@ html {
 
 /* Vitality Bar , Empty Frame */
 .vit {
-    top: 25vh;
+    top: 26vh;
     left: 5vh;
 }
     /* Fill Vitality Bar */
     #vitBar {
+        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
-        border: 2px solid rgb(180, 92, 173);
         height: 35px;
         width: 30%;
-        top: 25vh;
+        top: 26vh;
         left: 5vh;
         margin-top: 2%;
         margin-left: 3%;
@@ -67,17 +68,17 @@ html {
 
 /* Agility Bar , Empty Frame */ 
 .agi {
-    top: 40vh;
+    top: 39vh;
     left: 5vh;
 }
     /* Fill Agility Bar */
     #agiBar {
+        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
-        border: 2px solid rgb(180, 92, 173);
         height: 35px;
         width: 30%;
-        top: 40vh;
+        top: 39vh;
         left: 5vh;
         margin-top: 2%;
         margin-left: 3%;
@@ -86,17 +87,17 @@ html {
 
 /* Intelligence Bar , Empty Frame */
 .int {
-    top: 55vh;
+    top: 52vh;
     left: 5vh;
 }
     /* Fill Intelligence Bar */
     #intBar {
+        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
-        border: 2px solid rgb(180, 92, 173);
         height: 35px;
         width: 30%;
-        top: 55vh;
+        top: 52vh;
         left: 5vh;
         margin-top: 2%;
         margin-left: 3%;
@@ -105,17 +106,17 @@ html {
 
 /* Luck Bar , Empty Frame */
 .luck {
-    top: 70vh;
+    top: 65vh;
     left: 5vh;
 }
     /* Fill Luck Bar */
     #lukBar {
+        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
-        border: 2px solid rgb(180, 92, 173);
         height: 35px;
         width: 30%;
-        top: 70vh;
+        top: 65vh;
         left: 5vh;
         margin-top: 2%;
         margin-left: 3%;
@@ -184,7 +185,7 @@ html {
 /* Strength Buttons */
     #upStr {
         position: fixed;
-        top: 15vh;
+        top: 18vh;
         left: 36%;
         margin-right: 10px;
         margin-left: 2px;
@@ -192,7 +193,7 @@ html {
 
     #downStr {
         position: fixed;
-        top: 15vh;
+        top: 18vh;
         left: 2%;
         margin-right: 2px;
         margin-left: 10px;
@@ -201,7 +202,7 @@ html {
 /* Vitality Buttons */
     #upVit {
         position: fixed;
-        top: 30vh;
+        top: 31vh;
         left: 36%;
         margin-right: 10px;
         margin-left: 2px;
@@ -209,7 +210,7 @@ html {
 
     #downVit {
         position: fixed;
-        top: 30vh;
+        top: 31vh;
         left: 2%;
         margin-right: 2px;
         margin-left: 10px;
@@ -218,7 +219,7 @@ html {
 /* Agility Buttons */
     #upAgi {
         position: fixed;
-        top: 45vh;
+        top: 44vh;
         left: 36%;
         margin-right: 10px;
         margin-left: 2px;
@@ -226,7 +227,7 @@ html {
 
     #downAgi {
         position: fixed;
-        top: 45vh;
+        top: 44vh;
         left: 2%;
         margin-right: 2px;
         margin-left: 10px;
@@ -235,7 +236,7 @@ html {
 /* Intelligence Buttons */
     #upInt {
         position: fixed;
-        top: 60vh;
+        top: 57vh;
         left: 36%;
         margin-right: 10px;
         margin-left: 2px;
@@ -243,7 +244,7 @@ html {
 
     #downInt {
         position: fixed;
-        top: 60vh;
+        top: 57vh;
         left: 2%;
         margin-right: 2px;
         margin-left: 10px;
@@ -252,7 +253,7 @@ html {
 /* Luck Buttons */
     #upLuk {
         position: fixed;
-        top: 75vh;
+        top: 70vh;
         left: 36%;
         margin-right: 10px;
         margin-left: 2px;
@@ -260,7 +261,7 @@ html {
 
     #downLuk {
         position: fixed;
-        top: 75vh;
+        top: 70vh;
         left: 2%;
         margin-right: 2px;
         margin-left: 10px;
