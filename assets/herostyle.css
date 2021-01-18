@@ -11,30 +11,45 @@ html {
 
 /* --- Hero Stats Container --- */
 .statsContainer {
-    background-color: rgb(127, 224, 127);
     display: block;
     position: fixed;
     height: 80%;
-    width: 37%;
+    width: 40%;
     top: 5vh;
     left: 4vh;
     margin: 0 auto;
+    background-color: rgb(127, 224, 127);
 }
 
 /* All Stat Bars , Grouped by Class Name */
 .stats {
-    font-family: Overbyte;
-    font-size: 24px;    
-    color: rgb(3, 56, 110);
-    padding-left: 5px;
-    background-color: rgb(211, 216, 221);
-    border: 3px solid rgb(156, 196, 219);
     display: inline;
     position: fixed;
     height: 35px;
     width: 30%;
+    font-family: Overbyte;
+    font-size: 24px;
+    text-align: end;
+    color: rgba(48, 0, 206, 0.5);
+    opacity: 90%; 
     margin-top: 2%;
     margin-left: 3%;
+    margin-right: 0%;
+    background-color: rgb(195, 221, 247);
+    border: 2px solid rgb(155, 195, 220);
+    border-radius: 18px;
+    cursor: pointer;
+
+    /* stat bar glow */
+    box-shadow:
+    0 0 12px 8px #fff,  /* inner */
+    0 0 12px 8px #f0f, /* middle */
+    0 0 15px 5px #0ff; /* outer */
+
+    /* prevent user select */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    user-select: none;
 }
 
 /* Strength Bar , Empty Frame */
@@ -44,7 +59,6 @@ html {
 }
     /* Fill Strength Bar */
     #strBar {
-        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
@@ -54,6 +68,8 @@ html {
         margin-top: 2%;
         margin-left: 3%;
         padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
         z-index: -1;
     }
 
@@ -64,7 +80,6 @@ html {
 }
     /* Fill Vitality Bar */
     #vitBar {
-        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
@@ -74,6 +89,8 @@ html {
         margin-top: 2%;
         margin-left: 3%;
         padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
         z-index: -1;
     }
 
@@ -84,7 +101,6 @@ html {
 }
     /* Fill Agility Bar */
     #agiBar {
-        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
@@ -94,6 +110,8 @@ html {
         margin-top: 2%;
         margin-left: 3%;
         padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
         z-index: -1;
     }
 
@@ -104,7 +122,6 @@ html {
 }
     /* Fill Intelligence Bar */
     #intBar {
-        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
@@ -114,6 +131,8 @@ html {
         margin-top: 2%;
         margin-left: 3%;
         padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
         z-index: -1;
     }
 
@@ -124,7 +143,6 @@ html {
 }
     /* Fill Luck Bar */
     #lukBar {
-        border: 2px solid rgb(156, 196, 219);
         display: inline;
         position: fixed;
         height: 35px;
@@ -134,12 +152,13 @@ html {
         margin-top: 2%;
         margin-left: 3%;
         padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
         z-index: -1;
     }
 
 /* --- Build A Hero Container --- */
 .heroContainer:hidden {
-    background-color: rgb(218, 141, 141);
     display: block;
     position: fixed;
     height: 55%;
@@ -147,6 +166,7 @@ html {
     top: 20%;
     right: 35%;
     margin: auto;
+    background-color: rgb(218, 141, 141);
 }
     .heroHead {
         padding: 10px;
@@ -163,15 +183,15 @@ html {
 
 /* --- Hero Classes Container --- */
 .jobContainer:hidden {
-    background-color: lightblue;
-    padding: 10px;
     display: block;
     position: fixed;
+    padding: 10px;
     height: 50%;
     width: 25%;
     top: 20%;
     right: 5%;
     margin: auto;
+    background-color: lightblue;
 }
     .assassin {
         padding: 20px 0 20px 0;
@@ -190,8 +210,22 @@ html {
 
 /* All Buttons, Grouped by Class Name */
 .button {
-    background-color: white;
-    padding: 5px 10px;
+	display:inline-block;
+    padding: 5px 15px;
+    box-shadow: inset 0px 1px 0px 0px #6261ad;
+	background: linear-gradient(to bottom, #9cc2e0, #2783ec);
+    border: 1px solid #3d94f6;
+	border-radius: 15px;
+	color: white;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+    margin: 0px 40px 0px 40px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(#4478cc, #3171da);
+	background-color:#1e62d0;
 }
 
 /* Strength Buttons */
