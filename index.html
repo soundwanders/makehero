@@ -1,46 +1,79 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    <link rel = "stylesheet" type="text/css" href = "assets/herostyle.css">
-    <script src = "assets/makehero.js"></script>
+    <link rel = "stylesheet" type="text/css" href = "/assets/herostyle.css">
 </head>
 
 <title>
-    Make A Hero
+    makeHero
 </title>
 
 <body>
 
-<!-- project container -->
+<!-- Project Container -->
 <div class = "projectContainer">
 
-    <div class = "container-stats">
-    <!-- stats -->
-       <div class = "strength">
+    <!-- Stats -->
+    <div class = "statsContainer">
+    
+       <div class = "stats str" id = "strFrame">
             Strength
+            <div id = "strBar">
+            </div>
         </div>
 
-        <div class = "vitality">
+        <div class = "stats vit" id = "vitFrame">
             Vitality
+            <div id = "vitBar">
+            </div>
         </div>
 
-        <div class = "agility">
+        <div class = "stats agi" id = "agiFrame">
             Agility
+            <div id = "agiBar">
+            </div>
         </div>
 
-        <div class = "intelligence">
+        <div class = "stats int" id = "intFrame">
             Intelligence
+            <div id = "intBar">
+            </div>
         </div>
 
-        <div class = "luck">
+        <div class = "stats luck" id = "lukFrame">
             Luck
+            <div id = "lukBar">
+            </div>
         </div>
     </div>
+    
+    <!-- Add & Subract Stats Buttons -->
 
-    <!-- create hero display -->
-    <div class = "container-hero">
+    <!-- Strength -->
+    <button type = "button" class = "button" id = "upStr" title = "Increase Strength"> o </button>
+    <button type = "button" class = "button" id = "downStr" title = "Decrease Strength"> x </button>
+
+    <!-- Vitality -->
+    <button type = "button" class = "button" id = "upVit" title = "Increase Vitality"> o </button>
+    <button type = "button" class = "button" id = "downVit" title = "Decrease Vitality"> x </button>
+
+    <!-- Agility -->
+    <button type = "button" class = "button" id = "upAgi" title = "Increase Agility"> o </button>
+    <button type = "button" class = "button" id = "downAgi" title = "Decrease Agility"> x </button>
+
+    <!-- Intelligence -->
+    <button type = "button" class = "button" id = "upInt" title = "Increase Intelligence"> o </button>
+    <button type = "button" class = "button" id = "downInt" title = "Decrease Intelligence"> x </button>
+
+    <!-- Luck -->
+    <button type = "button" class = "button" id = "upLuk" title = "Increase Luck"> o </button>
+    <button type = "button" class = "button" id = "downLuk" title = "Decrease Luck"> x </button>
+
+    <!-- Create a Hero Display -->
+    <div class = "heroContainer">
         <div class = "heroHead">
             Head
         </div>
@@ -58,15 +91,14 @@
         </div>
     </div>
 
-    <!-- hero class choices -->
-    <div class = "container-classes">
-
+    <!-- Hero Class Choices -->
+    <div class = "jobContainer">
         <div class = "assassin">
             Assassin
         </div>
 
-        <div class = "knight">
-            Knight
+        <div class = "gladiator">
+            Gladiator
         </div>
 
         <div class = "ninja">
@@ -79,6 +111,7 @@
     </div>
 </div>
 
+ <script src = "/assets/makehero.js"></script>
 </body>
 
 </html>

@@ -1,51 +1,204 @@
 /* CSS */
-
 html {
-    background-color: slate;
+    background-color: rgb(12, 8, 22);
 }
 
-/* Hero Stats */
-.container-stats {
-    background-color: rgb(108, 223, 108);
+/* load custom font */
+@font-face {
+    font-family: Overbyte;
+    src: url(/fonts/overbyte.otf);
+}
+
+/* --- Hero Stats Container --- */
+.statsContainer {
     display: block;
     position: fixed;
-    height: 75%;
-    width: 25%;
-    top: 10vh;
+    height: 80%;
+    width: 40%;
+    top: 5vh;
+    left: 4vh;
+    margin: 0 auto;
+    background-color: rgb(182, 182, 182);
+}
+
+/* All Stat Bars , Grouped by Class Name */
+.stats {
+    display: inline;
+    position: fixed;
+    height: 35px;
+    width: 30%;
+    font-family: Overbyte;
+    font-size: 24px;
+    text-align: end;
+    color: rgba(48, 0, 206, 0.5);
+    opacity: 90%; 
+    margin-top: 2%;
+    margin-left: 3%;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgb(195, 221, 247);
+    border: 2px solid rgb(155, 195, 220);
+    border-radius: 18px;
+    cursor: pointer;
+
+    /* stat bar glow */
+    box-shadow:
+    0 0 12px 5px #fff,  /* inner */
+    0 0 15px 5px #f0f, /* middle */
+    0 0 15px 5px #0ff; /* outer */
+
+    /* prevent user select */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    user-select: none;
+}
+
+/* Strength Bar , Empty Frame */
+.str {
+    top: 13vh;
     left: 5vh;
 }
+    /* Fill Strength Bar */
+    #strBar {
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
+        top: 13vh;
+        left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
+        z-index: -1;
+    }
 
-.strength {
-    padding: 20px 0 20px 0;
+/* Vitality Bar , Empty Frame */
+.vit {
+    top: 26vh;
+    left: 5vh;
 }
+    /* Fill Vitality Bar */
+    #vitBar {
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
+        top: 26vh;
+        left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
+        z-index: -1;
+    }
 
-.vitality {
-    padding: 20px 0 20px 0;
+/* Agility Bar , Empty Frame */ 
+.agi {
+    top: 39vh;
+    left: 5vh;
 }
+    /* Fill Agility Bar */
+    #agiBar {
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
+        top: 39vh;
+        left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
+        z-index: -1;
+    }
 
-.agility {
-    padding: 20px 0 20px 0;
+/* Intelligence Bar , Empty Frame */
+.int {
+    top: 52vh;
+    left: 5vh;
 }
+    /* Fill Intelligence Bar */
+    #intBar {
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
+        top: 52vh;
+        left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
+        z-index: -1;
+    }
 
-.intelligence {
-    padding: 20px 0 20px 0;
-}
-
+/* Luck Bar , Empty Frame */
 .luck {
-    padding: 20px 0 20px 0;
+    top: 65vh;
+    left: 5vh;
 }
+    /* Fill Luck Bar */
+    #lukBar {
+        display: inline;
+        position: fixed;
+        height: 35px;
+        width: 30%;
+        top: 65vh;
+        left: 5vh;
+        margin-top: 2%;
+        margin-left: 3%;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2px solid rgb(155, 195, 220);
+        border-radius: 18px;
+        z-index: -1;
+    }
 
-/* Hero Classes */
-.container-classes {
-    background-color: lightblue;
+/* --- Build A Hero Container --- */
+.heroContainer:hidden {
     display: block;
     position: fixed;
-    top: 30vh;
-    right: 5vh;
+    height: 55%;
+    width: 30%;
+    top: 20%;
+    right: 35%;
+    margin: auto;
+    background-color: rgb(218, 141, 141);
+}
+    .heroHead {
+        padding: 10px;
+    }
+    .heroBody {
+        padding: 10px;
+    }
+    .heroLegs {
+        padding: 10px;
+    }
+    .weapon {
+        padding: 10px;
+    }
+
+/* --- Hero Classes Container --- */
+.jobContainer:hidden {
+    display: block;
+    position: fixed;
+    padding: 10px;
     height: 50%;
     width: 25%;
+    top: 20%;
+    right: 5%;
+    margin: auto;
+    background-color: lightblue;
 }
-
     .assassin {
         padding: 20px 0 20px 0;
     }
@@ -59,25 +212,110 @@ html {
         padding: 20px 0 20px 0;
     }
 
-/* Build A Hero */
-.container-hero {
-    background-color: rgb(214, 145, 145);
-    display: block;
-    position: fixed;
-    top: 10vh;
-    right: 85vh;
-    height: 75%;
-    width: 30%;
+/* --- BUTTONS --- */
+
+/* All Buttons, Grouped by Class Name */
+.button {
+	display:inline-block;
+    padding: 5px 15px;
+    box-shadow: inset 0px 1px 0px 0px #6261ad;
+	background: linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255));
+    border: 1px solid #3d94f6;
+	border-radius: 15px;
+	color: white;
+	text-decoration:none;
+	text-shadow: 1px 1px #000000;
+    margin: 0px 40px 0px 40px;
+    opacity: 85%;
+    cursor: pointer;
 }
-    .heroHead {
-        padding: 10px;
+
+.button:hover {
+    background: linear-gradient(#8bb0ec, #3171da);
+	background-color:#1e62d0;
+}
+
+/* Strength Buttons */
+    #upStr {
+        position: fixed;
+        top: 18vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
     }
-    .heroBody {
-        padding: 10px;
+
+    #downStr {
+        position: fixed;
+        top: 18vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
     }
-    .heroLegs {
-        padding: 10px;
+
+/* Vitality Buttons */
+    #upVit {
+        position: fixed;
+        top: 31vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
     }
-    .weapon {
-        padding: 10px;
+
+    #downVit {
+        position: fixed;
+        top: 31vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Agility Buttons */
+    #upAgi {
+        position: fixed;
+        top: 44vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downAgi {
+        position: fixed;
+        top: 44vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Intelligence Buttons */
+    #upInt {
+        position: fixed;
+        top: 57vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downInt {
+        position: fixed;
+        top: 57vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Luck Buttons */
+    #upLuk {
+        position: fixed;
+        top: 70vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downLuk {
+        position: fixed;
+        top: 70vh;
+        left: 2%;
+        margin-right: 2px;
+        margin-left: 10px;
     }
