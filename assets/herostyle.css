@@ -124,12 +124,12 @@ html {
 
 /* --- Build A Hero Container --- */
 
-.heroContainer:hidden {
-    background-color: rgb(218, 141, 141);
+.heroContainer {
+    background-color: rgb(255, 255, 255);
     display: block;
     position: fixed;
     height: 55%;
-    width: 30%;
+    width: 25%;
     top: 20%;
     right: 35%;
     margin: auto;
@@ -154,7 +154,7 @@ html {
     padding: 10px;
     display: block;
     position: fixed;
-    height: 50%;
+    height: 55%;
     width: 25%;
     top: 20%;
     right: 5%;
@@ -266,34 +266,33 @@ html {
         margin-left: 10px;
     }
 
-
 /* Hero Body Parts */
 
 /* Ninja */
-.ninjaHead {
+#ninjaHead {
     position: fixed;
     top: -20%;
     left: 60vh;
-    transform: scale(0.25, 0.25);
-    -ms-transform: scale(0.25, 0.25);
-    -webkit-transform: scale(0.25, 0.25);
+    transform: scale(0.21, 0.21);
+    -ms-transform: scale(0.21, 0.21);
+    -webkit-transform: scale(0.21, 0.21);
 }
 
 /* Samurai */
-.samuraiHead {
+#samuraiHead {
     position: fixed;
     top: -40%;
     left: 60vh;
-    transform: scale(0.25, 0.25);
-    -ms-transform: scale(0.25, 0.25);
-    -webkit-transform: scale(0.25, 0.25);
+    transform: scale(0.20, 0.20);
+    -ms-transform: scale(0.20, 0.20);
+    -webkit-transform: scale(0.20, 0.20);
 }
 
-.gladiatorHead {
+#gladiatorHead {
     position: fixed;
     top: 0%;
     left: 60vh;
-    transform: scale(0.25, 0.25);
-    -ms-transform: scale(0.25, 0.25);
-    -webkit-transform: scale(0.25, 0.25);
+    transform: scale(0.20, 0.20);
+    -ms-transform: scale(0.20, 0.20);
+    -webkit-transform: scale(0.20, 0.20);
 }

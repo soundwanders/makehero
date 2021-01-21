@@ -271,4 +271,12 @@ let luck = 0;
       console.log("Zero Luck");
     }
   };
-//
+
+// Change Hero Display Depending on Selected Class
+let getJobs = document.querySelector("jobContainer");
+
+getJobs.addEventListener('click', function (e) {
+  if (e.target.className === 'hero') {
+    e.target.classList.toggle('selected');
+  }
+}, false);
