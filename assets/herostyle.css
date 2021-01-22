@@ -125,7 +125,7 @@ html {
 /* --- Build A Hero Container --- */
 
 .heroContainer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(167, 95, 95);
     display: block;
     position: fixed;
     height: 55%;
@@ -134,20 +134,44 @@ html {
     right: 35%;
     margin: auto;
 }
-    .heroHead {
-        padding: 10px;
-    }
-    .heroBody {
-        padding: 10px;
-    }
-    .heroLegs {
-        padding: 10px;
-    }
-    .weapon {
-        padding: 10px;
-    }
 
-/* --- Hero Classes Container --- */
+    /* Hero Heads */
+
+        /* Ninja */
+        #ninjaHead {
+            display: none;
+            position: fixed;
+            top: -40%;
+            left: 50vh;
+            transform: scale(0.21, 0.21);
+            -ms-transform: scale(0.21, 0.21);
+            -webkit-transform: scale(0.21, 0.21);
+        }
+
+        /* Samurai */
+        #samuraiHead {
+            display: none;
+            position: fixed;
+            top: -38%;
+            left: 60vh;
+            transform: scale(0.20, 0.20);
+            -ms-transform: scale(0.20, 0.20);
+            -webkit-transform: scale(0.20, 0.20);
+        }
+
+        #gladiatorHead {
+            display: none;
+            position: fixed;
+            top: -40%;
+            left: 60vh;
+            transform: scale(0.20, 0.20);
+            -ms-transform: scale(0.20, 0.20);
+            -webkit-transform: scale(0.20, 0.20);
+        }
+
+
+
+/* --- Hero Class Container --- */
 
 .jobContainer {
     background-color: lightblue;
@@ -172,6 +196,8 @@ html {
     .samurai {
         padding: 20px 0 20px 0;
     }
+
+
 
 /* --- BUTTONS --- */
 
@@ -266,33 +292,30 @@ html {
         margin-left: 10px;
     }
 
-/* Hero Body Parts */
+/* Hero Class Buttons */
+.heroBtn {
+    position: fixed;
+    padding: 2em 15em;
+}   
+
+/* Alchemist */
+#alchemistBtn {
+    top: 23%;
+}
+
+/* GLadiator */
+#gladiatorBtn {
+    top: 38%;
+}
 
 /* Ninja */
-#ninjaHead {
-    position: fixed;
-    top: -20%;
-    left: 60vh;
-    transform: scale(0.21, 0.21);
-    -ms-transform: scale(0.21, 0.21);
-    -webkit-transform: scale(0.21, 0.21);
+#ninjaBtn {
+    top: 53%;
+    padding: 2em 16em;
 }
 
 /* Samurai */
-#samuraiHead {
-    position: fixed;
-    top: -40%;
-    left: 60vh;
-    transform: scale(0.20, 0.20);
-    -ms-transform: scale(0.20, 0.20);
-    -webkit-transform: scale(0.20, 0.20);
-}
 
-#gladiatorHead {
-    position: fixed;
-    top: 0%;
-    left: 60vh;
-    transform: scale(0.20, 0.20);
-    -ms-transform: scale(0.20, 0.20);
-    -webkit-transform: scale(0.20, 0.20);
+#samuraiBtn {
+    top: 68%;
 }
