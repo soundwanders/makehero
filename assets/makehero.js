@@ -274,38 +274,38 @@ let luck = 0;
 
 // Change Hero Display Depending on Selected Class
 
-// get hero images
-  // let alcHead = document.getElementById("alchemistHead");
-  let gladHead = document.getElementById("gladiatorHead");
-  let samHead = document.getElementById("samuraiHead");
-  let ninHead = document.getElementById("ninjaHead");
+  // get hero images
+    // let alcHead = document.getElementById("alchemistHead");
+    let gladHead = document.getElementById("gladiatorHead");
+    let samHead = document.getElementById("samuraiHead");
+    let ninHead = document.getElementById("ninjaHead");
 
-// Toggle Alchemist display
+  // Toggle Alchemist display
 
-// Toggle Gladiator display
-  const gladiatorBtn = document.getElementById("gladiatorBtn");
+  // Toggle Gladiator display
+    const gladiatorBtn = document.getElementById("gladiatorBtn");
 
-  gladiatorBtn.addEventListener('click', function toggleGladiator() {
-    gladHead.style.display = "block";
-    samHead.style.display = "none";
-    ninHead.style.display = "none";
-  }, false);
+    gladiatorBtn.addEventListener('click', function toggleGladiator() {
+      gladHead.style.display = "block";
+      samHead.style.display = "none";
+      ninHead.style.display = "none";
+    }, false);
 
-// Toggle Ninja display
-  const ninjaBtn = document.getElementById("ninjaBtn");
-  
-  ninjaBtn.addEventListener('click', function toggleNinja() {
-    ninHead.style.display = "block";
-    gladHead.style.display = "none";
-    samHead.style.display = "none";
-  }, false);
+  // Toggle Ninja display
+    const ninjaBtn = document.getElementById("ninjaBtn");
+    
+    ninjaBtn.addEventListener('click', function toggleNinja() {
+      ninHead.style.display = "block";
+      gladHead.style.display = "none";
+      samHead.style.display = "none";
+    }, false);
 
-// Toggle Samurai display
-  const samuraiBtn = document.getElementById("samuraiBtn");
-  
-  samuraiBtn.addEventListener('click', function toggleSamurai() {
-    samHead.style.display = "block";
-    ninHead.style.display = "none";
-    gladHead.style.display = "none";
-  }, false);
+  // Toggle Samurai display
+    const samuraiBtn = document.getElementById("samuraiBtn");
+    
+    samuraiBtn.addEventListener('click', function toggleSamurai() {
+      samHead.style.display = "block";
+      ninHead.style.display = "none";
+      gladHead.style.display = "none";
+    }, false);
 
