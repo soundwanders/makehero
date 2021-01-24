@@ -100,7 +100,8 @@ let luck = 0;
     while (strength < 30) {
       strength += 3;
       strengthBar.style.width = strength + "%" ,
-      strengthBar.style.backgroundImage = "linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255))";
+      strengthBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))";
+      strengthBar.style.opacity = "80%";
       console.log("Increased Strength");
       console.log(strength);
       return;
@@ -118,7 +119,8 @@ let luck = 0;
     while (vitality < 30) {
       vitality += 3;
       vitalityBar.style.width = vitality + "%" ,
-      vitalityBar.style.backgroundImage = "linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255))";
+      vitalityBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      vitalityBar.style.opacity = "80%";
       console.log("Increased Vitality");
       console.log(vitality);
       return;
@@ -135,7 +137,8 @@ let luck = 0;
     while (agility < 30) {
       agility += 3;
       agilityBar.style.width = agility + "%" ,
-      agilityBar.style.backgroundImage = "linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255))";
+      agilityBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      agilityBar.style.opacity = "80%";
       console.log("Increased Agility");
       console.log(agility);
       return;
@@ -152,7 +155,8 @@ let luck = 0;
     while (intelligence < 30) {
       intelligence += 3;
       intelligenceBar.style.width = intelligence + "%" ,
-      intelligenceBar.style.backgroundImage = "linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255))";
+      intelligenceBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" , 
+      intelligenceBar.style.opacity = "80%";
       console.log("Increased Intelligence");
       console.log(intelligence);
       return;
@@ -169,7 +173,8 @@ let luck = 0;
     while (luck < 30) {
       luck += 3;
       luckBar.style.width = luck + "%" ,
-      luckBar.style.backgroundImage = "linear-gradient(rgb(5, 155, 255), rgb(155, 250, 255))";
+      luckBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      luckBar.style.opacity = "80%";
       console.log("Increased Luck");
       console.log(luck);
       return;
@@ -190,7 +195,7 @@ let luck = 0;
     while (strength > 0) {
       strength -= 3;
       strengthBar.style.width = strength + "%" ,
-      strengthBar.style.backgroundColor = "rgb(180, 92, 173)";
+      strengthBar.style.opacity = "80%";
       console.log("Decreased Strength");
       console.log(strength);
       return;
@@ -208,6 +213,7 @@ let luck = 0;
     while (vitality > 0) {
       vitality-= 3;
       vitalityBar.style.width = vitality + "%" ,
+      vitalityBar.style.opacity = "80%";
       console.log("Decreased Vitality");
       console.log(vitality);
       return;
@@ -225,6 +231,7 @@ let luck = 0;
     while (agility > 0) {
       agility -= 3;
       agilityBar.style.width = agility + "%" ,
+      agilityBar.style.opacity = "80%";
       console.log("Decreased Agility");
       console.log(agility);
       return;
