@@ -95,12 +95,13 @@ let luck = 0;
     let strengthBar = document.getElementById("strBar");
 
     // while width is less than max width (30%) , add increments of 3
-    // and change width, background color of the empty strength div
-    // to represent the increase of strength stat
+    // and change display, width, background color of the strength bar
+    // to represent the strength stat being increased
     while (strength < 30) {
       strength += 3;
       strengthBar.style.width = strength + "%" ,
-      strengthBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))";
+      strengthBar.style.display = "inline";
+      strengthBar.style.backgroundImage = "linear-gradient(#ffee10, #fff570)" ,
       strengthBar.style.opacity = "80%";
       console.log("Increased Strength");
       console.log(strength);
@@ -119,7 +120,7 @@ let luck = 0;
     while (vitality < 30) {
       vitality += 3;
       vitalityBar.style.width = vitality + "%" ,
-      vitalityBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      vitalityBar.style.backgroundImage = "linear-gradient(#ffee10, #fff570)" ,
       vitalityBar.style.opacity = "80%";
       console.log("Increased Vitality");
       console.log(vitality);
@@ -137,7 +138,7 @@ let luck = 0;
     while (agility < 30) {
       agility += 3;
       agilityBar.style.width = agility + "%" ,
-      agilityBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      agilityBar.style.backgroundImage = "linear-gradient(#ffee10, #fff570)" ,
       agilityBar.style.opacity = "80%";
       console.log("Increased Agility");
       console.log(agility);
@@ -155,7 +156,7 @@ let luck = 0;
     while (intelligence < 30) {
       intelligence += 3;
       intelligenceBar.style.width = intelligence + "%" ,
-      intelligenceBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" , 
+      intelligenceBar.style.backgroundImage = "linear-gradient(#ffee10, #fff570)" ,
       intelligenceBar.style.opacity = "80%";
       console.log("Increased Intelligence");
       console.log(intelligence);
@@ -173,7 +174,7 @@ let luck = 0;
     while (luck < 30) {
       luck += 3;
       luckBar.style.width = luck + "%" ,
-      luckBar.style.backgroundImage = "linear-gradient(rgb(10, 125, 255), rgb(15, 250, 255))" ,
+      luckBar.style.backgroundImage = "linear-gradient(#ffee10, #fff570)" ,
       luckBar.style.opacity = "80%";
       console.log("Increased Luck");
       console.log(luck);
@@ -194,13 +195,15 @@ let luck = 0;
 
     while (strength > 0) {
       strength -= 3;
+      strengthBar.style.display = "inline";
       strengthBar.style.width = strength + "%" ,
       strengthBar.style.opacity = "80%";
       console.log("Decreased Strength");
       console.log(strength);
       return;
     }
-    if (strength <= 0) {
+    if (strength == 0) {
+      strengthBar.style.display = "none";
       console.log("Zero Strength");
     }
   };
@@ -212,6 +215,7 @@ let luck = 0;
 
     while (vitality > 0) {
       vitality-= 3;
+      vitalityBar.style.display = "inline";
       vitalityBar.style.width = vitality + "%" ,
       vitalityBar.style.opacity = "80%";
       console.log("Decreased Vitality");
@@ -219,6 +223,7 @@ let luck = 0;
       return;
     }
     if (vitality <= 0) {
+      vitalityBar.style.display = "none";
       console.log("Zero Vitality");
     }
   };
@@ -230,6 +235,7 @@ let luck = 0;
 
     while (agility > 0) {
       agility -= 3;
+      agilityBar.style.display = "inline";
       agilityBar.style.width = agility + "%" ,
       agilityBar.style.opacity = "80%";
       console.log("Decreased Agility");
@@ -237,6 +243,7 @@ let luck = 0;
       return;
     }
     if (agility <= 0) {
+      agilityBar.style.display = "none";
       console.log("Zero Agility");
     }
   };
@@ -248,12 +255,14 @@ let luck = 0;
 
     while (intelligence > 0) {
       intelligence -= 3;
+      intelligenceBar.style.display = "inline";
       intelligenceBar.style.width = intelligence + "%" ,
       console.log("Decreased Intelligence");
       console.log(intelligence);
       return;
     }
     if (intelligence <= 0) {
+      intelligenceBar.style.display = "none";
       console.log("Zero Intelligence");
     }
   };
@@ -265,12 +274,14 @@ let luck = 0;
 
     while (luck > 0) {
       luck -= 3;
+      luckBar.style.display = "inline";
       luckBar.style.width = luck + "%" ,
       console.log("Decreased Luck");
       console.log(luck);
       return;
     }
     if (luck <= 0) {
+      luckBar.style.display = "none";
       console.log("Zero Luck");
     }
   };
