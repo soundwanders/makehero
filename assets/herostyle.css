@@ -1,4 +1,11 @@
 /* CSS */
+body {
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -4;
+}
 
 /* load custom font */
 @font-face {
@@ -167,7 +174,7 @@
 /* --- Build A Hero Container --- */
 
 .heroContainer {
-    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200));
+    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200)); 
     display: block;
     position: absolute;
     padding: 10px;
