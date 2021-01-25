@@ -2,7 +2,7 @@
 
 // --- STATS ---
 
-// ## Create Empty Variables for Each Stat ##
+// --- Create Empty Variables for Each Stat ---
 // numbers are used to manipulate width of stat bars
 // to show addition and removal of stat points
 let strength = 0;
@@ -11,7 +11,7 @@ let agility = 0;
 let intelligence = 0;
 let luck = 0;
 
-// ## Add Event Listeners to Stat Bars ##
+// --- Add Event Listeners to Stat Bars ---
 
   // Strength
   // get empty Strength stat bar frame, serves as skeleton
@@ -42,7 +42,7 @@ let luck = 0;
   luckFrame.addEventListener('contextmenu', subtractLuk);
 //
 
-// ## Add Event Listeners to Stat Buttons ##
+// --- Add Event Listeners to Stat Buttons ---
 
   // Increase Strength Button
     const upStr = document.getElementById("upStr");
@@ -86,7 +86,7 @@ let luck = 0;
 //
 
 // --- FUNCTIONS ---
-// ## Add Stats ##
+// --- Add Stats ---
 
   // Add Strength
   function addStr() {
@@ -180,7 +180,7 @@ let luck = 0;
   };
 //
 
-// ## Subtract Stats ##
+// --- Subtract Stats ---
 
   // Subtract Strength
   function subtractStr(e) {
@@ -274,11 +274,17 @@ let luck = 0;
 
 // Change Hero Display Depending on Selected Class
 
-  // get hero images
+  // Get Hero Body Parts
     // let alcHead = document.getElementById("alchemistHead");
+
     let gladHead = document.getElementById("gladiatorHead");
+
     let samHead = document.getElementById("samuraiHead");
+
     let ninHead = document.getElementById("ninjaHead");
+    let ninBody = document.getElementById("ninjaBody");
+
+// --- TOGGLE HERO DISPLAY FUNCTIONS ---
 
   // Toggle Alchemist display
 
@@ -296,6 +302,7 @@ let luck = 0;
     
     ninjaBtn.addEventListener('click', function toggleNinja() {
       ninHead.style.display = "block";
+      ninBody.style.display = "block";
       gladHead.style.display = "none";
       samHead.style.display = "none";
     }, false);
@@ -308,4 +315,3 @@ let luck = 0;
       ninHead.style.display = "none";
       gladHead.style.display = "none";
     }, false);
-

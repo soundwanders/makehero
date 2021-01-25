@@ -147,6 +147,18 @@ html {
             transform: scale(0.21, 0.21);
             -ms-transform: scale(0.21, 0.21);
             -webkit-transform: scale(0.21, 0.21);
+            z-index: 4;
+        }
+
+        #ninjaBody {
+            display: none;
+            position: fixed;
+            top: 16.2%;
+            left: 92.3vh;
+            transform: scale(0.7, 0.7);
+            -ms-transform: scale(0.7, 0.7);
+            -webkit-transform: scale(0.7, 0.7);
+            z-index: 2;
         }
 
         /* Samurai */
@@ -169,8 +181,6 @@ html {
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
         }
-
-
 
 /* --- Hero Class Container --- */
 
@@ -197,6 +207,16 @@ html {
     .samurai {
         padding: 20px 0 20px 0;
     }
+
+.cloud {
+    position: absolute;
+    top: 50vh;
+    left: 5vh;
+    opacity: 30%;
+    transform: scale(0.90, 0.90);
+    -ms-transform: scale(0.90, 0.90);
+    -webkit-transform: scale(0.90, 0.90);
+}
 
 
 
