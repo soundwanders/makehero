@@ -125,7 +125,7 @@ html {
 /* --- Build A Hero Container --- */
 
 .heroContainer {
-    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 210));
+    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200));
     display: block;
     position: absolute;
     padding: 10px;
@@ -141,20 +141,20 @@ html {
         /* Ninja */
         #ninjaHead {
             display: none;
-            position: fixed;
-            top: -35%;
-            left: 50vh;
-            transform: scale(0.21, 0.21);
-            -ms-transform: scale(0.21, 0.21);
-            -webkit-transform: scale(0.21, 0.21);
+            position: absolute;
+            top: -60%;
+            left: -39vh;
+            transform: scale(0.20, 0.20);
+            -ms-transform: scale(0.20, 0.20);
+            -webkit-transform: scale(0.20, 0.20);
             z-index: 4;
         }
 
         #ninjaBody {
             display: none;
-            position: fixed;
-            top: 16.2%;
-            left: 92.3vh;
+            position: absolute;
+            top: 5.4%;
+            left: 3.1vh;
             transform: scale(0.7, 0.7);
             -ms-transform: scale(0.7, 0.7);
             -webkit-transform: scale(0.7, 0.7);
@@ -164,9 +164,9 @@ html {
         /* Samurai */
         #samuraiHead {
             display: none;
-            position: fixed;
-            top: -33%;
-            left: 60vh;
+            position: absolute;
+            top: -57%;
+            left: -30vh;
             transform: scale(0.20, 0.20);
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
@@ -185,14 +185,14 @@ html {
 /* --- Hero Class Container --- */
 
 .jobContainer {
-    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 210));
+    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200));
     display: block;
     position: absolute;
-    padding: 10px;
-    height: 75%;
-    width: 25%;
     top: 10%;
     right: 5%;
+    height: 75%;
+    width: 25%;
+    padding: 10px;
     margin: auto;
 }
     .assassin {
@@ -218,13 +218,12 @@ html {
     -webkit-transform: scale(0.90, 0.90);
 }
 
-
-
 /* --- BUTTONS --- */
 
-/* All Buttons, Grouped by Class Name */
+/* All Stat Buttons */
 .button {
-    background-color: white;
+    position: fixed;
+    display:inline-block;
     padding: 5px 10px;
 }
 
@@ -313,15 +312,38 @@ html {
         margin-left: 10px;
     }
 
-/* Hero Class Buttons */
+/* All Hero Class Buttons */
     .heroBtn {
         position: fixed;
+        display: flex;
+        background: none;
         left: 72%;
         border: none;
+        border-radius: 60px;
         font-size: 30px;
         font-family: Overbyte;
         margin: auto;
-    }   
+    }
+
+    .heroBtn::before {
+    background: #ffee10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    transition: .5s;
+    transform: scale(.8);
+    content: '';
+    z-index: -2;
+    }
+
+    .heroBtn:hover::before {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ffee10;
+    content: "";
+    }
 
     /* Alchemist */
     #alchemistBtn {

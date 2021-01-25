@@ -293,8 +293,11 @@ let luck = 0;
 
     gladiatorBtn.addEventListener('click', function toggleGladiator() {
       gladHead.style.display = "block";
+
       samHead.style.display = "none";
+
       ninHead.style.display = "none";
+      ninBody.style.display = "none";
     }, false);
 
   // Toggle Ninja display
@@ -303,7 +306,9 @@ let luck = 0;
     ninjaBtn.addEventListener('click', function toggleNinja() {
       ninHead.style.display = "block";
       ninBody.style.display = "block";
+      
       gladHead.style.display = "none";
+
       samHead.style.display = "none";
     }, false);
 
@@ -312,6 +317,10 @@ let luck = 0;
     
     samuraiBtn.addEventListener('click', function toggleSamurai() {
       samHead.style.display = "block";
-      ninHead.style.display = "none";
+
+
       gladHead.style.display = "none";
+
+      ninHead.style.display = "none";
+      ninBody.style.display = "none";
     }, false);
