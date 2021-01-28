@@ -13,45 +13,48 @@
 
 <body>
 
+<!-- Background -->
+<img src = "/images/background.png">
+
 <!-- Project Container -->
 <div class = "projectContainer">
 
-    <!-- Stats Background Container -->
+<!-- Stats Background Container -->
     <div class = "statsContainer">
     </div>
 
         <!-- Stat Bars -->
        <div class = "stats str" id = "strFrame">
-            STRENGTH &nbsp
+            Strength &nbsp
             <div id = "strBar">
             </div>
         </div>
 
         <div class = "stats vit" id = "vitFrame">
-            VITALITY &nbsp
+            Vitality &nbsp
             <div id = "vitBar">
             </div>
         </div>
 
         <div class = "stats agi" id = "agiFrame">
-            AGILITY &nbsp
+            Agility &nbsp
             <div id = "agiBar">
             </div>
         </div>
 
         <div class = "stats int" id = "intFrame">
-            INTELLIGENCE &nbsp
+            Intelligence &nbsp
             <div id = "intBar">
             </div>
         </div>
 
         <div class = "stats luck" id = "lukFrame">
-            LUCK &nbsp
+            Luck &nbsp
             <div id = "lukBar">
             </div>
         </div>
     
-    <!-- Add & Subract Stats Buttons -->
+<!-- Add & Subract Stats Buttons -->
 
     <!-- Strength -->
     <button type = "button" class = "button" id = "upStr" title = "Increase Strength"> </button>
@@ -73,30 +76,32 @@
     <button type = "button" class = "button" id = "upLuk" title = "Increase Luck"> </button>
     <button type = "button" class = "button" id = "downLuk" title = "Decrease Luck"> </button>
 
-    <!-- Create a Hero Display Container -->
+
+<!-- Create a Hero Display Container -->
     <div class = "heroContainer">
-
-    <!-- Gladiator -->
-    <!-- Head  -->
-    <img class = "heroHead" id = "gladiatorHead" src = "./images/gladiator/gladiatorHead.png">
+    </div>
     
+        <div id = "heroImages">
+        <!-- Gladiator -->
+        <!-- Head  -->
+            <img class = "heroHead" id = "gladiatorHead" src = "/images/gladiator/gladiatorHead.png">
 
-    <!-- Ninja -->
-        <!-- Head -->
-        <img class = "heroHead" id = "ninjaHead" src = "./images/ninja/ninjaHead.png">
-        <img class = "heroBody" id = "ninjaBody" src = "./images/ninja/ninjaBody.png">
+        <!-- Ninja -->
+            <!-- Head -->
+            <img class = "heroHead" id = "ninjaHead" src = "/images/ninja/ninjaHead.png">
+            <img class = "heroBody" id = "ninjaBody" src = "/images/ninja/ninjaBody.png">
 
-    <!-- Samurai -->
-        <!-- Head -->
-        <img class = "heroHead" id = "samuraiHead" src = "./images/samurai/samuraiHead.png">
+        <!-- Samurai -->
+            <!-- Head -->
+            <img class = "heroHead" id = "samuraiHead" src = "/images/samurai/samuraiHead.png">
 
-        <!-- Cloud "pedestal" image -->
-        <img src = "images/cloud.png" class = "cloud">
+        </div>   
 
-    </div>   
-
-    <!-- Hero Class Choices -->
+<!-- Hero Class Choices -->
     <div class = "jobContainer">
+    </div>
+
+    <div id = "jobs">
         <button type = "button" class = "heroBtn" id = "alchemistBtn" title = "Select Alchemist">
             Alchemist
         </button>

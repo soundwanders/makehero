@@ -1,10 +1,10 @@
 /* CSS */
 body {
-    background-image: url('/images/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -4;
+    background-image: url(/images/background.png);
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: contain;
+    z-index: -10;
 }
 
 /* load custom font */
@@ -15,16 +15,15 @@ body {
 
 /* --- Hero Stats Container --- */
 .statsContainer {
-    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200));
+    background: none;
     display: block;
     position: absolute;
     height: 75%;
     width: 37%;
     top: 10vh;
     left: 4vh;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 30px;
-    z-index: -2;
 }
 
 /* All Stat Bars , Grouped by Class Name */
@@ -32,20 +31,19 @@ body {
     background-color:rgb(255, 255, 255);
     display: inline;
     position: fixed;
-    height: 35px;
+    height: 45px;
     width: 30%;
     font-family: Overbyte;
-    font-size: 26px;
-    color: rgb(20, 33, 70);
+    font-size: 30px;
+    color: rgb(20, 35, 70);
     text-align: end;
     text-shadow: 1px 0px #000000;
-    letter-spacing: 3px;
+    letter-spacing: initial;
     border: 2px solid rgb(210, 225, 230);
     border-radius: 18px;
     margin-top: 2%;
     margin-left: 3%;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding: 5px 5px;
     cursor: pointer;
     z-index: 0;
 
@@ -63,88 +61,88 @@ body {
 
 /* Strength Bar , Empty Frame */
 .str {
-    top: 13vh;
-    left: 5vh;
+    top: 5vh;
+    left: 3vh;
 }
     /* Fill Strength Bar */
     #strBar {
         display: inline;
         position: fixed;
-        height: 35px;
+        height: 45px;
         width: 30%;
-        top: 13vh;
-        left: 5vh;
+        top: 5vh;
+        left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 2px solid rgb(155, 195, 220);
+        border: 3px solid rgb(200, 240, 255, 0.5);
         border-radius: 18px;
         z-index: -1;
     }
 
 /* Vitality Bar , Empty Frame */
 .vit {
-    top: 26vh;
-    left: 5vh;
+    top: 20vh;
+    left: 3vh;
 }
     /* Fill Vitality Bar */
     #vitBar {
         display: inline;
         position: fixed;
-        height: 35px;
+        height: 45px;
         width: 30%;
-        top: 26vh;
-        left: 5vh;
+        top: 20vh;
+        left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 2px solid rgb(155, 195, 220);
+        border: 3px solid rgb(200, 240, 255, 0.5);
         border-radius: 18px;
         z-index: -1;
     }
 
 /* Agility Bar , Empty Frame */ 
 .agi {
-    top: 39vh;
-    left: 5vh;
+    top: 35vh;
+    left: 3vh;
 }
     /* Fill Agility Bar */
     #agiBar {
         display: inline;
         position: fixed;
-        height: 35px;
+        height: 45px;
         width: 30%;
-        top: 39vh;
-        left: 5vh;
+        top: 35vh;
+        left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 2px solid rgb(155, 195, 220);
+        border: 3px solid rgb(200, 240, 255, 0.5);
         border-radius: 18px;
         z-index: -1;
     }
 
 /* Intelligence Bar , Empty Frame */
 .int {
-    top: 52vh;
-    left: 5vh;
+    top: 50vh;
+    left: 3vh;
 }
     /* Fill Intelligence Bar */
     #intBar {
         display: inline;
         position: fixed;
-        height: 35px;
+        height: 45px;
         width: 30%;
-        top: 52vh;
-        left: 5vh;
+        top: 50vh;
+        left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 2px solid rgb(155, 195, 220);
+        border: 3px solid rgb(200, 240, 255, 0.5);
         border-radius: 18px;
         z-index: -1;
     }
@@ -152,21 +150,21 @@ body {
 /* Luck Bar , Empty Frame */
 .luck {
     top: 65vh;
-    left: 5vh;
+    left: 3vh;
 }
     /* Fill Luck Bar */
     #lukBar {
         display: inline;
         position: fixed;
-        height: 35px;
+        height: 45px;
         width: 30%;
         top: 65vh;
-        left: 5vh;
+        left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 2px solid rgb(155, 195, 220);
+        border: 3px solid rgb(200, 240, 255, 0.5);
         border-radius: 18px;
         z-index: -1;
     }
@@ -174,7 +172,7 @@ body {
 /* --- Build A Hero Container --- */
 
 .heroContainer {
-    background: linear-gradient(rgb(150, 250, 250) , rgb(50, 50, 200)); 
+    background: none;
     display: block;
     position: absolute;
     padding: 10px;
@@ -183,7 +181,6 @@ body {
     top: 10%;
     right: 35%;
     margin: auto;
-    background-color: rgb(218, 141, 141);
 }
 
 /* --- Hero Classes Container --- */
@@ -200,8 +197,9 @@ body {
         #ninjaHead {
             display: none;
             position: absolute;
-            top: -60%;
-            left: -39vh;
+            position: fixed;
+            top: -37%;
+            left: 50vh;
             transform: scale(0.20, 0.20);
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
@@ -210,9 +208,9 @@ body {
 
         #ninjaBody {
             display: none;
-            position: absolute;
-            top: 5.4%;
-            left: 3.1vh;
+            position: fixed;
+            top: 14.5%;
+            left: 92.2vh;
             transform: scale(0.7, 0.7);
             -ms-transform: scale(0.7, 0.7);
             -webkit-transform: scale(0.7, 0.7);
@@ -222,9 +220,9 @@ body {
         /* Samurai */
         #samuraiHead {
             display: none;
-            position: absolute;
-            top: -57%;
-            left: -30vh;
+          position: fixed;
+            top: -35%;
+            left: 60vh;
             transform: scale(0.20, 0.20);
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
@@ -253,139 +251,17 @@ body {
     padding: 10px;
     margin: auto;
     background-color: lightblue;
-}
-    .assassin {
-        padding: 20px 0 20px 0;
-    }
-    .knight {
-        padding: 20px 0 20px 0;
-    }
-    .ninja {
-        padding: 20px 0 20px 0;
-    }
-    .samurai {
-        padding: 20px 0 20px 0;
-    }
-
-.cloud {
-    position: absolute;
-    top: 50vh;
-    left: 5vh;
     opacity: 30%;
-    transform: scale(0.90, 0.90);
-    -ms-transform: scale(0.90, 0.90);
-    -webkit-transform: scale(0.90, 0.90);
+    z-index: -2;
+}
+
+#jobs {
+    z-index: 4;
 }
 
 /* --- BUTTONS --- */
 
-/* All Stat Buttons */
-.button {
-	display:inline-block;
-    padding: 13px 13px;
-    box-shadow: inset 0px 1px 0px 0px #6261ad;
-	background: linear-gradient(rgb(5, 155, 255), rgb(138, 249, 255));
-    border: 1px solid #3d94f6;
-	border-radius: 15px;
-	color: white;
-	text-decoration:none;
-	text-shadow: 1px 1px #000000;
-    margin: 0px 40px 0px 40px;
-    opacity: 85%;
-    cursor: pointer;
-}
-
-.button:hover {
-    background: linear-gradient(#8bb0ec, #3171da);
-	background-color:#1e62d0;
-}
-
-/* Strength Buttons */
-    #upStr {
-        position: fixed;
-        top: 18vh;
-        left: 36%;
-        margin-right: 10px;
-        margin-left: 2px;
-    }
-
-    #downStr {
-        position: fixed;
-        top: 18vh;
-        left: 2%;
-        margin-right: 2px;
-        margin-left: 10px;
-    }
-
-/* Vitality Buttons */
-    #upVit {
-        position: fixed;
-        top: 31vh;
-        left: 36%;
-        margin-right: 10px;
-        margin-left: 2px;
-    }
-
-    #downVit {
-        position: fixed;
-        top: 31vh;
-        left: 2%;
-        margin-right: 2px;
-        margin-left: 10px;
-    }
-
-/* Agility Buttons */
-    #upAgi {
-        position: fixed;
-        top: 44vh;
-        left: 36%;
-        margin-right: 10px;
-        margin-left: 2px;
-    }
-
-    #downAgi {
-        position: fixed;
-        top: 44vh;
-        left: 2%;
-        margin-right: 2px;
-        margin-left: 10px;
-    }
-
-/* Intelligence Buttons */
-    #upInt {
-        position: fixed;
-        top: 57vh;
-        left: 36%;
-        margin-right: 10px;
-        margin-left: 2px;
-    }
-
-    #downInt {
-        position: fixed;
-        top: 57vh;
-        left: 2%;
-        margin-right: 2px;
-        margin-left: 10px;
-    }
-
-/* Luck Buttons */
-    #upLuk {
-        position: fixed;
-        top: 70vh;
-        left: 36%;
-        margin-right: 10px;
-        margin-left: 2px;
-    }
-
-    #downLuk {
-        position: fixed;
-        top: 70vh;
-        left: 2%;
-        margin-right: 2px;
-        margin-left: 10px;
-    }
-
-/* All Hero Class Buttons */
+/* Hero Class Buttons */
     .heroBtn {
         position: fixed;
         display: flex;
@@ -395,9 +271,11 @@ body {
         border-radius: 60px;
         font-size: 30px;
         font-family: Overbyte;
+        color: rgb(20, 35, 70);
         text-shadow: 1px 1px white;
         margin: auto;
-        z-index: 0;
+        cursor: pointer;
+        z-index: 2;
     }
 
     .heroBtn::before {
@@ -443,4 +321,110 @@ body {
     #samuraiBtn {
         top: 68%;
         padding: 1em 4.2em;
+    }
+
+/* Stat Buttons */
+    .button {
+        display:inline-block;
+        padding: 18px 18px;
+        box-shadow: inset 0px 1px 1px 1px #ffffff;
+        background: linear-gradient(rgb(255, 255, 255), rgb(138, 249, 255));
+        border: 1px solid #3d94f6;
+        border-radius: 25px;
+        color: white;
+        text-decoration:none;
+        text-shadow: 1px 1px #000000;
+        margin: 0px 40px 0px 40px;
+        opacity: 85%;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: linear-gradient(#e9ff1f, #f2ff3b);
+        background-color:#1e62d0;
+    }
+
+/* Strength Buttons */
+    #upStr {
+        position: fixed;
+        top: 11vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downStr {
+        position: fixed;
+        top: 11vh;
+        left: 1%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Vitality Buttons */
+    #upVit {
+        position: fixed;
+        top: 26vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downVit {
+        position: fixed;
+        top: 26vh;
+        left: 1%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Agility Buttons */
+    #upAgi {
+        position: fixed;
+        top: 41vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downAgi {
+        position: fixed;
+        top: 41vh;
+        left: 1%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Intelligence Buttons */
+    #upInt {
+        position: fixed;
+        top: 56vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downInt {
+        position: fixed;
+        top: 56vh;
+        left: 1%;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+/* Luck Buttons */
+    #upLuk {
+        position: fixed;
+        top: 71vh;
+        left: 36%;
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    #downLuk {
+        position: fixed;
+        top: 71vh;
+        left: 1%;
+        margin-right: 2px;
+        margin-left: 10px;
     }
