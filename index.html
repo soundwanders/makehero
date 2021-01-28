@@ -14,14 +14,13 @@
 <body>
 
 <!-- Background -->
-<img src = "/images/background.png">
+<img class = "background" src = "/images/background.png">
 
 <!-- Project Container -->
 <div class = "projectContainer">
 
 <!-- Stats Background Container -->
     <div class = "statsContainer">
-    </div>
 
         <!-- Stat Bars -->
        <div class = "stats str" id = "strFrame">
@@ -53,7 +52,8 @@
             <div id = "lukBar">
             </div>
         </div>
-    
+    </div>
+
 <!-- Add & Subract Stats Buttons -->
 
     <!-- Strength -->
@@ -79,8 +79,6 @@
 
 <!-- Create a Hero Display Container -->
     <div class = "heroContainer">
-    </div>
-    
         <div id = "heroImages">
         <!-- Gladiator -->
         <!-- Head  -->
@@ -95,29 +93,28 @@
             <!-- Head -->
             <img class = "heroHead" id = "samuraiHead" src = "/images/samurai/samuraiHead.png">
 
-        </div>   
+        </div>  
+    </div> 
 
 <!-- Hero Class Choices -->
     <div class = "jobContainer">
+            <button type = "button" class = "heroBtn" id = "alchemistBtn" title = "Select Alchemist">
+                Alchemist
+            </button>
+
+            <button type = "button" class = "heroBtn" id = "gladiatorBtn" title = "Select Gladiator">
+                Gladiator
+            </button>
+
+            <button type = "button" class = "heroBtn" id = "ninjaBtn" title = "Select Ninja">
+                Ninja
+            </button>
+
+            <button type = "button" class = "heroBtn" id = "samuraiBtn" title = "Select Samurai">
+                Samurai
+            </button>
     </div>
-
-    <div id = "jobs">
-        <button type = "button" class = "heroBtn" id = "alchemistBtn" title = "Select Alchemist">
-            Alchemist
-        </button>
-
-        <button type = "button" class = "heroBtn" id = "gladiatorBtn" title = "Select Gladiator">
-            Gladiator
-        </button>
-
-        <button type = "button" class = "heroBtn" id = "ninjaBtn" title = "Select Ninja">
-            Ninja
-        </button>
-
-        <button type = "button" class = "heroBtn" id = "samuraiBtn" title = "Select Samurai">
-            Samurai
-        </button>
-    </div>
+    
 </div>
 
 </body>
