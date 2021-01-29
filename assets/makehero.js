@@ -90,8 +90,8 @@ let luck = 0;
 
   // Add Strength
   function addStr() {
-    // get none strength stat bar div
-    // none until user adds stats, then becomes visible
+    // get empty strength stat bar div
+    // bar remains "empty" until user adds stats
     let strengthBar = document.getElementById("strBar");
 
     // while width is less than max width (30%) , add increments of 3
