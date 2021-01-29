@@ -1,10 +1,10 @@
 /* CSS */
+
 body {
-    background-image: url(/images/background.png);
-    background-position: top;
-    background-repeat:no-repeat;
-    background-size: contain;
-    z-index: -10;
+    background: #000 url(/images/background/smallBackground.png) no-repeat; 
+    background-size: cover !important;
+    width: 100%;
+    height: auto;
 }
 
 /* load custom font */
@@ -23,7 +23,7 @@ body {
     top: 10vh;
     left: 4vh;
     margin: 0;
-    border-radius: 30px;
+    border-radius: 35px;
 }
 
 /* All Stat Bars , Grouped by Class Name */
@@ -272,10 +272,10 @@ body {
         position: fixed;
         display: flex;
         background: none;
-        left: 72%;
+        left: 65%;
         border: none;
         border-radius: 60px;
-        font-size: 30px;
+        font-size: 32px;
         font-family: Overbyte;
         color: rgb(20, 35, 70);
         text-shadow: 1px 1px white;
@@ -299,33 +299,33 @@ body {
     }
 
     .heroBtn:hover::before {
-    transform: scale(1);
+    transform: scale(1.0);
     box-shadow: 0 0 15px #ffee10;
     content: "";
     }
 
     /* Alchemist */
     #alchemistBtn {
-        top: 23%;
+        top: 8%;
         padding: 1em 3.8em;
     }
 
     /* GLadiator */
     #gladiatorBtn {
-        top: 38%;
+        top: 26%;
         padding: 1em 4em;
     }
 
     /* Ninja */
     #ninjaBtn {
-        top: 53%;
+        top: 46%;
         padding: 1em 5em;
     }
 
     /* Samurai */
 
     #samuraiBtn {
-        top: 68%;
+        top: 66%;
         padding: 1em 4.2em;
     }
 
@@ -333,15 +333,12 @@ body {
     .button {
         display:inline-block;
         padding: 18px 18px;
-        box-shadow: inset 0px 1px 1px 1px #ffffff;
+        box-shadow: inset 5px 0px #ffffff;
         background: linear-gradient(rgb(255, 255, 255), rgb(138, 249, 255));
         border: 1px solid #3d94f6;
         border-radius: 25px;
-        color: white;
-        text-decoration:none;
-        text-shadow: 1px 1px #000000;
         margin: 0px 40px 0px 40px;
-        opacity: 85%;
+        opacity: 95%;
         cursor: pointer;
     }
 
@@ -354,7 +351,7 @@ body {
     #upStr {
         position: fixed;
         top: 11vh;
-        left: 36%;
+        left: 35.7%;
         margin-right: 10px;
         margin-left: 2px;
     }
@@ -371,7 +368,7 @@ body {
     #upVit {
         position: fixed;
         top: 26vh;
-        left: 36%;
+        left: 35.7%;
         margin-right: 10px;
         margin-left: 2px;
     }
@@ -388,7 +385,7 @@ body {
     #upAgi {
         position: fixed;
         top: 41vh;
-        left: 36%;
+        left: 35.7%;
         margin-right: 10px;
         margin-left: 2px;
     }
@@ -405,7 +402,7 @@ body {
     #upInt {
         position: fixed;
         top: 56vh;
-        left: 36%;
+        left: 35.7%;
         margin-right: 10px;
         margin-left: 2px;
     }
@@ -422,7 +419,7 @@ body {
     #upLuk {
         position: fixed;
         top: 71vh;
-        left: 36%;
+        left: 35.7%;
         margin-right: 10px;
         margin-left: 2px;
     }
