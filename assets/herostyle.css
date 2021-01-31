@@ -94,7 +94,7 @@ body {
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 3px solid rgb(200, 240, 255, 0.5);
+        border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 18px;
         z-index: -1;
     }
@@ -116,7 +116,7 @@ body {
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 3px solid rgb(200, 240, 255, 0.5);
+        border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 18px;
         z-index: -1;
     }
@@ -138,7 +138,7 @@ body {
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 3px solid rgb(200, 240, 255, 0.5);
+        border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 18px;
         z-index: -1;
     }
@@ -160,7 +160,7 @@ body {
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 3px solid rgb(200, 240, 255, 0.5);
+        border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 18px;
         z-index: -1;
     }
@@ -182,7 +182,7 @@ body {
         margin-left: 3%;
         padding-top: 5px;
         padding-left: 5px;
-        border: 3px solid rgb(200, 240, 255, 0.5);
+        border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 18px;
         z-index: -1;
     }
@@ -227,23 +227,34 @@ body {
         #ninjaBody {
             display: none;
             position: fixed;
-            top: 14.5%;
+            top: 12.5%;
             left: 92.2vh;
-            transform: scale(0.7, 0.7);
-            -ms-transform: scale(0.7, 0.7);
-            -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.6, 0.6);
+            -ms-transform: scale(0.6, 0.6);
+            -webkit-transform: scale(0.6, 0.6);
             z-index: 2;
         }
 
         /* Samurai */
         #samuraiHead {
             display: none;
-          position: fixed;
+            position: fixed;
             top: -35%;
             left: 60vh;
             transform: scale(0.20, 0.20);
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
+        }
+
+        #samuraiBody {
+            display: none;
+            position: fixed;
+            top: 23.2%;
+            left: 103vh;
+            transform: scale(0.85, 0.85);
+            -ms-transform: scale(0.85, 0.85);
+            -webkit-transform: scale(0.85, 0.85);
+            z-index: -2;
         }
 
         #gladiatorHead {

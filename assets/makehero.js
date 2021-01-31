@@ -294,6 +294,7 @@ let luck = 0;
     let gladHead = document.getElementById("gladiatorHead");
 
     let samHead = document.getElementById("samuraiHead");
+    let samBody = document.getElementById("samuraiBody");
 
     let ninHead = document.getElementById("ninjaHead");
     let ninBody = document.getElementById("ninjaBody");
@@ -309,9 +310,11 @@ let luck = 0;
       gladHead.style.display = "block";
 
       samHead.style.display = "none";
+      samBody.style.display = "none";
 
       ninHead.style.display = "none";
       ninBody.style.display = "none";
+
     }, false);
 
   // Toggle Ninja display
@@ -324,6 +327,7 @@ let luck = 0;
       gladHead.style.display = "none";
 
       samHead.style.display = "none";
+      samBody.style.display = "none";
     }, false);
 
   // Toggle Samurai display
@@ -331,6 +335,7 @@ let luck = 0;
     
     samuraiBtn.addEventListener('click', function toggleSamurai() {
       samHead.style.display = "block";
+      samBody.style.display = "block";
 
 
       gladHead.style.display = "none";
