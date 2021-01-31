@@ -216,8 +216,8 @@ body {
             display: none;
             position: absolute;
             position: fixed;
-            top: -37%;
-            left: 50vh;
+            top: -36.6%;
+            left: 50.5vh;
             transform: scale(0.20, 0.20);
             -ms-transform: scale(0.20, 0.20);
             -webkit-transform: scale(0.20, 0.20);
