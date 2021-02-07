@@ -1,7 +1,7 @@
 /* CSS */
 
 body {
-    background-image: url(images/background/smallBackground.PNG);
+    background-image: url(assets/images/background/smallBackground.PNG);
     background-size: cover !important;
     background-position: fixed;
     width: 100%;
@@ -13,7 +13,7 @@ body {
 /* load custom font */
 @font-face {
     font-family: Overbyte;
-    src: url(fonts/overbyte.otf);
+    src: url(/assets/fonts/overbyte.otf);
 }
 
 /* Hero Stats Container */
