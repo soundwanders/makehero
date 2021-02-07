@@ -1,7 +1,7 @@
 /* CSS */
 
 body {
-    background-image: url(assets/images/background/smallBackground.PNG);
+    background-image: url(/assets/images/background/smallBackground.PNG);
     background-size: cover !important;
     background-position: fixed;
     width: 100%;
