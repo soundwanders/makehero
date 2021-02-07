@@ -19,6 +19,6 @@
   "bugs": {
     "url": "https://github.com/soundwanders/makehero/issues"
   },
-  "homepage": "https://github.com/soundwanders/makehero#readme",
+  "homepage": "https://soundwanders.github.io/makehero" ,
   "dependencies": {}
 }
