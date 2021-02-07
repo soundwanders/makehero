@@ -12,7 +12,6 @@ body {
 /* load custom font */
 @font-face {
     font-family: Overbyte;
-    alt: "";
     src: url(./fonts/overbyte.otf);
 }
 
