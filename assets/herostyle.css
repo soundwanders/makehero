@@ -1,7 +1,6 @@
 /* CSS */
 
 body {
-    background-image: url(./images/background/smallBackground.png);
     background-size: cover !important;
     alt: "";
     background-position: fixed;
