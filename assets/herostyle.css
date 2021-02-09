@@ -213,7 +213,19 @@ body {
 
     /* Hero Heads */
 
-        /* Ninja */
+    /* Ninja */
+    #ninja {
+        display: none;
+        position: absolute;
+        position: fixed;
+        top: -5%;
+        left: 49vh;
+        transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+        -webkit-transform: scale(0.8, 0.8);
+        z-index: -2;
+    }
+    /*
         #ninjaHead {
             display: none;
             position: absolute;
@@ -236,6 +248,18 @@ body {
             -webkit-transform: scale(0.55, 0.55);
             z-index: -4;
         }
+
+        #ninjaLegs {
+            display: none;
+            position: fixed;
+            top: 35.8%;
+            left: 92vh;
+            transform: scale(0.75, 0.75);
+            -ms-transform: scale(0.75, 0.75);
+            -webkit-transform: scale(0.75, 0.75);
+            z-index: -6;
+        }
+    */ 
 
         /* Samurai */
         #samuraiHead {

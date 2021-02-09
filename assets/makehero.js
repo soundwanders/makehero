@@ -296,8 +296,12 @@ let luck = 0;
     let samHead = document.getElementById("samuraiHead");
     let samBody = document.getElementById("samuraiBody");
 
+    let ninja = document.getElementById("ninja");
+/*
     let ninHead = document.getElementById("ninjaHead");
     let ninBody = document.getElementById("ninjaBody");
+    let ninLegs = document.getElementById("ninjaLegs");
+*/
 
 // --- TOGGLE HERO DISPLAY FUNCTIONS ---
 
@@ -312,8 +316,7 @@ let luck = 0;
       samHead.style.display = "none";
       samBody.style.display = "none";
 
-      ninHead.style.display = "none";
-      ninBody.style.display = "none";
+      ninja.style.display = "none";
 
     }, false);
 
@@ -321,13 +324,13 @@ let luck = 0;
     const ninjaBtn = document.getElementById("ninjaBtn");
     
     ninjaBtn.addEventListener('click', function toggleNinja() {
-      ninHead.style.display = "block";
-      ninBody.style.display = "block";
+      ninja.style.display = "block";
       
       gladHead.style.display = "none";
 
       samHead.style.display = "none";
       samBody.style.display = "none";
+      
     }, false);
 
   // Toggle Samurai display
@@ -340,6 +343,6 @@ let luck = 0;
 
       gladHead.style.display = "none";
 
-      ninHead.style.display = "none";
-      ninBody.style.display = "none";
+      ninja.style.display = "none";
+
     }, false);
