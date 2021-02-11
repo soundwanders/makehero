@@ -218,8 +218,8 @@ body {
         display: none;
         position: absolute;
         position: fixed;
-        top: -5%;
-        left: 49vh;
+        top: -13%;
+        left: 50vh;
         transform: scale(0.8, 0.8);
         -ms-transform: scale(0.8, 0.8);
         -webkit-transform: scale(0.8, 0.8);
