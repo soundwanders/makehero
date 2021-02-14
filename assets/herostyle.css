@@ -12,7 +12,7 @@ body {
 /* load custom font */
 @font-face {
     font-family: Overbyte;
-    src: url(/assets/fonts/overbyte.otf);
+    src: url(assets/fonts/overbyte.otf);
 }
 
 /* Hero Stats Container */
