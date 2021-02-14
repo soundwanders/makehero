@@ -36,21 +36,21 @@ body {
 /* All Stat Bars , Grouped by Class Name */
 .stats {
     background-color:rgb(255, 255, 255);
-    display: inline;
+    display: inline-block;
     position: fixed;
     height: 55px;
     width: 30%;
-    font-family: Overbyte;
+    font-family: Overbyte , mono;
     font-size: 28px;
     color: rgb(20, 35, 70);
     text-align: end;
     text-shadow: 1px 0px #000000;
     letter-spacing: initial;
-    border: 1px solid rgb(210, 225, 230);
+    border: 2px solid rgb(210, 225, 230);
     border-radius: 25px;
     margin-top: 2%;
     margin-left: 3%;
-    padding: 10px 5px;
+    padding: 5px 5px;
     cursor: pointer;
     z-index: 2;
 
@@ -80,7 +80,7 @@ body {
     }
 
     .stats:hover::before {
-    box-shadow: 0 0 15px #ffee10;
+    box-shadow: 0 0 20px #ffee10;
     content: "";
     }
 
