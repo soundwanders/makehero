@@ -289,23 +289,14 @@ let luck = 0;
 // Change Hero Display Depending on Selected Class
 
   // Get Hero Body Parts
-    // let alcHead = document.getElementById("alchemistHead");
-
     let gladHead = document.getElementById("gladiatorHead");
 
     let samHead = document.getElementById("samuraiHead");
     let samBody = document.getElementById("samuraiBody");
 
     let ninja = document.getElementById("ninja");
-/*
-    let ninHead = document.getElementById("ninjaHead");
-    let ninBody = document.getElementById("ninjaBody");
-    let ninLegs = document.getElementById("ninjaLegs");
-*/
 
 // --- TOGGLE HERO DISPLAY FUNCTIONS ---
-
-  // Toggle Alchemist display
 
   // Toggle Gladiator display
     const gladiatorBtn = document.getElementById("gladiatorBtn");
@@ -313,8 +304,7 @@ let luck = 0;
     gladiatorBtn.addEventListener('click', function toggleGladiator() {
       gladHead.style.display = "block";
 
-      samHead.style.display = "none";
-      samBody.style.display = "none";
+      samurai.style.display = "none";
 
       ninja.style.display = "none";
 
@@ -328,8 +318,7 @@ let luck = 0;
       
       gladHead.style.display = "none";
 
-      samHead.style.display = "none";
-      samBody.style.display = "none";
+      samurai.style.display = "none";
       
     }, false);
 
@@ -337,9 +326,7 @@ let luck = 0;
     const samuraiBtn = document.getElementById("samuraiBtn");
     
     samuraiBtn.addEventListener('click', function toggleSamurai() {
-      samHead.style.display = "block";
-      samBody.style.display = "block";
-
+      samurai.style.display = "block";
 
       gladHead.style.display = "none";
 
