@@ -3,7 +3,7 @@
 body {
     background-size: cover !important;
     alt: "";
-    background-position: fixed;
+    background-position: fixed center;
     width: 100%;
     height: auto;
     overflow-x: hidden;
@@ -12,13 +12,18 @@ body {
 /* load custom font */
 @font-face {
     font-family: Overbyte;
-    src: url(assets/fonts/overbyte.otf);
+    src: url(/assets/fonts/overbyte.otf);
+}
+
+.projectContainer {
+    max-width: 100%;
+    min-width: 100%;
 }
 
 /* Hero Stats Container */
 .statsContainer {
     background: none;
-    display: block;
+    display: inline-block;
     position: absolute;
     height: 75%;
     width: 37%;
@@ -33,7 +38,7 @@ body {
     background-color:rgb(255, 255, 255);
     display: inline;
     position: fixed;
-    height: 45px;
+    height: 55px;
     width: 30%;
     font-family: Overbyte;
     font-size: 28px;
@@ -45,9 +50,9 @@ body {
     border-radius: 25px;
     margin-top: 2%;
     margin-left: 3%;
-    padding: 5px 5px;
+    padding: 10px 5px;
     cursor: pointer;
-    z-index: 0;
+    z-index: 2;
 
     /* stat bar glow */
     box-shadow:
@@ -88,14 +93,13 @@ body {
     #strBar {
         display: inline;
         position: fixed;
-        height: 45px;
+        height: 55px;
         width: 30%;
         top: 5vh;
         left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
-        padding-top: 5px;
-        padding-left: 5px;
+        padding: 5px 5px;
         border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 25px;
         z-index: -1;
@@ -110,14 +114,13 @@ body {
     #vitBar {
         display: inline;
         position: fixed;
-        height: 45px;
+        height: 55px;
         width: 30%;
         top: 20vh;
         left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
-        padding-top: 5px;
-        padding-left: 5px;
+        padding: 5px 5px;
         border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 25px;
         z-index: -1;
@@ -132,14 +135,13 @@ body {
     #agiBar {
         display: inline;
         position: fixed;
-        height: 45px;
+        height: 55px;
         width: 30%;
         top: 35vh;
         left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
-        padding-top: 5px;
-        padding-left: 5px;
+        padding: 5px 5px;
         border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 25px;
         z-index: -1;
@@ -154,14 +156,13 @@ body {
     #intBar {
         display: inline;
         position: fixed;
-        height: 45px;
+        height: 55px;
         width: 30%;
         top: 50vh;
         left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
-        padding-top: 5px;
-        padding-left: 5px;
+        padding: 5px 5px;
         border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 25px;
         z-index: -1;
@@ -176,14 +177,13 @@ body {
     #lukBar {
         display: inline;
         position: fixed;
-        height: 45px;
+        height: 55px;
         width: 30%;
         top: 65vh;
         left: 3vh;
         margin-top: 2%;
         margin-left: 3%;
-        padding-top: 5px;
-        padding-left: 5px;
+        padding: 5px 5px;
         border: 3px solid rgb(200, 240, 255, 0.6);
         border-radius: 25px;
         z-index: -1;
@@ -192,41 +192,37 @@ body {
 /* Build A Hero Container */
 
 .heroContainer {
-    background: none;
-    display: block;
-    position: relative;
-    padding: 10px;
-    height: 75%;
-    width: 25%;
-    top: 10%;
-    right: 35%;
-    margin: auto;
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden;      /* hide the overflow */
 }
-    /* Hero Heads */
+
+  /* Heros */
 
     /* Ninja */
     #ninja {
         display: none;
         position: fixed;
-        top: -10%;
-        left: 52vh;
-        transform: scale(0.89, 0.89);
-        -ms-transform: scale(0.89, 0.89);
-        -webkit-transform: scale(0.89, 0.89);
-        z-index: -2;
+        top: 0vh;
+        left: 58vh;
+        transform: scale(0.89);
+        -moz-transform: scale(0.89);
+        -ms-transform: scale(0.89);
+        -webkit-transform: scale(0.89);
+        z-index: -4;
     }
 
     /* Samurai */
     #samurai {
         display: none;
         position: fixed;
-        top: -1%;
-        left: 52vh;
-        transform: scale(0.6, 0.6);
-        -ms-transform: scale(0.6, 0.6);
-        -webkit-transform: scale(0.6, 0.6);
-        padding: -50% -50%;
-        z-index: -2;
+        top: 10vh;
+        left: 58vh;
+        transform: scale(0.6);
+        -moz-transform:scale(0.6);
+        -ms-transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        z-index: -4;
+        padding: -10vh 10vh;
     }
 
     #gladiatorHead {
@@ -234,17 +230,18 @@ body {
         position: fixed;
         top: -35%;
         left: 60vh;
-        transform: scale(0.20, 0.20);
-        -ms-transform: scale(0.20, 0.20);
-        -webkit-transform: scale(0.20, 0.20);
-        z-index: -2;
+        transform: scale(0.2);
+        -moz-transform:scale(0.2);
+        -ms-transform: scale(0.2);
+        -webkit-transform: scale(0.2);
+        z-index: -4;
     }
 
-/* Hero Class Container */
+/* Hero Class Selection Buttons Container */
 
 .jobContainer {
     background: none;
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: 4;
 }
@@ -254,7 +251,7 @@ body {
 /* Hero Class Buttons */
     .heroBtn {
         position: fixed;
-        display: flex;
+        display: inline-block;
         background: none;
         left: 64%;
         border: none;
@@ -290,13 +287,13 @@ body {
 
     /* Gladiator */
     #gladiatorBtn {
-        top: 25%;
+        top: 15%;
         padding: 1em 3.8em;
     }
 
     /* Ninja */
     #ninjaBtn {
-        top: 45%;
+        top: 40%;
         padding: 1em 5em;
     }
 
@@ -307,11 +304,11 @@ body {
     }
 
 /* Stat Buttons */
-    .button {
+    .upButton {
         display:inline-block;
         padding: 18px 18px;
-        box-shadow: inset 5px 0px #ffffff;
-        background: linear-gradient(rgb(255, 255, 255), rgb(138, 249, 255));
+        box-shadow: inset 4px 0px #ffffff;
+        background: linear-gradient(rgb(255, 255, 255), rgb(104, 189, 194));
         border: 1px solid #3d94f6;
         border-radius: 25px;
         margin: 0px 40px 0px 40px;
@@ -319,9 +316,26 @@ body {
         cursor: pointer;
     }
 
-    .button:hover {
-        background: linear-gradient(#e9ff1f, #f2ff3b);
-        background-color:#1e62d0;
+    .downButton {
+        display:inline-block;
+        padding: 18px 18px;
+        box-shadow: inset 4px 0px #ffffff;
+        background: linear-gradient(rgb(255, 255, 255), rgb(104, 189, 194));
+        border: 1px solid #550000;
+        border-radius: 25px;
+        margin: 0px 40px 0px 40px;
+        opacity: 95%;
+        cursor: pointer;
+    }
+
+    .upButton:hover {
+        background: linear-gradient(#3dd657, #08ff1d);
+        box-shadow: inset 1px 0px rgb(255, 255, 255);
+    }
+
+      .downButton:hover {
+        box-shadow: inset 1px 0px rgb(255, 104, 104);
+        background: linear-gradient(rgb(233, 47, 47), rgb(190, 37, 37));
     }
 
 /* Strength Buttons */

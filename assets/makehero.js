@@ -302,7 +302,7 @@ let luck = 0;
     const gladiatorBtn = document.getElementById("gladiatorBtn");
 
     gladiatorBtn.addEventListener('click', function toggleGladiator() {
-      gladHead.style.display = "block";
+      gladHead.style.display = "inline-block";
 
       samurai.style.display = "none";
 
@@ -314,7 +314,7 @@ let luck = 0;
     const ninjaBtn = document.getElementById("ninjaBtn");
     
     ninjaBtn.addEventListener('click', function toggleNinja() {
-      ninja.style.display = "block";
+      ninja.style.display = "inline-block";
       
       gladHead.style.display = "none";
 
@@ -326,7 +326,7 @@ let luck = 0;
     const samuraiBtn = document.getElementById("samuraiBtn");
     
     samuraiBtn.addEventListener('click', function toggleSamurai() {
-      samurai.style.display = "block";
+      samurai.style.display = "inline-block";
 
       gladHead.style.display = "none";
 
