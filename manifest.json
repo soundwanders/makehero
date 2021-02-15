@@ -1,0 +1,16 @@
+{
+  "name": "makeHero",
+  "short_name": "makeHero",
+  "lang": "en-US",
+  "start_url": "soundwanders.github.io/makehero",
+  "display": "browser",
+  "orientation": "natural",
+  "theme_color": "#00ff",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
