@@ -211,7 +211,7 @@ body {
 }
   /* Heros */
     /* Gladiator */
-    #gladiatorHead {
+    #gladiator {
         display: none;
         position: fixed;
         top: -35%;
