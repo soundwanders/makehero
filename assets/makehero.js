@@ -125,6 +125,7 @@ function addVit () {
 
   vitality += 3;
   vitalityBar.style.width = vitality + '%';
+  vitalityBar.style.display = 'inline';
   vitalityBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
   vitalityBar.style.opacity = '80%';
   console.log('Increased Vitality');
@@ -140,9 +141,9 @@ function addAgi () {
     console.log('Maxed Agility');
     return;
   }
-
   agility += 3;
   agilityBar.style.width = agility + '%';
+  agilityBar.style.display = 'inline';
   agilityBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
   agilityBar.style.opacity = '80%';
   console.log('Increased Agility');
@@ -158,9 +159,9 @@ function addInt () {
     console.log('Maxed Intelligence');
     return;
   }
-
   intelligence += 3;
   intelligenceBar.style.width = intelligence + '%';
+  intelligenceBar.style.display = 'inline';
   intelligenceBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
   intelligenceBar.style.opacity = '80%';
   console.log('Increased Intelligence');
@@ -174,14 +175,15 @@ function addLuk () {
   if (luck >= 30) {
     luck = 30;
     console.log('Maxed Luck');
+    return;
   }
-
-  luck += 3;
-  luckBar.style.width = luck + '%';
-  luckBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
-  luckBar.style.opacity = '80%';
-  console.log('Increased Luck');
-  console.log(luck);
+    luck += 3;
+    luckBar.style.width = luck + '%';
+    luckBar.style.display = 'inline';
+    luckBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
+    luckBar.style.opacity = '80%';
+    console.log('Increased Luck');
+    console.log(luck);
 }
 
 // _________________Subtract Stats _________________ //
@@ -197,7 +199,6 @@ function subtractStr (e) {
     console.log('Zero Strength');
     return;
   }
-
   strength -= 3;
   strengthBar.style.display = 'inline';
   strengthBar.style.width = strength + '%';
@@ -217,7 +218,6 @@ function subtractVit (e) {
     console.log('Zero Vitality');
     return;
   }
-
   vitality -= 3;
   vitalityBar.style.display = 'inline';
   vitalityBar.style.width = vitality + '%';
@@ -237,7 +237,6 @@ function subtractAgi (e) {
     console.log('Zero Agility');
     return;
   }
-
   agility -= 3;
   agilityBar.style.display = 'inline';
   agilityBar.style.width = agility + '%';
@@ -257,7 +256,6 @@ function subtractInt (e) {
     console.log('Zero Intelligence');
     return;
   }
-
   intelligence -= 3;
   intelligenceBar.style.display = 'inline';
   intelligenceBar.style.width = intelligence + '%';
@@ -276,7 +274,6 @@ function subtractLuk (e) {
     console.log('Zero Luck');
     return;
   }
-
   luck -= 3;
   luckBar.style.display = 'inline';
   luckBar.style.width = luck + '%';

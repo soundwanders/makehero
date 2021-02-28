@@ -2,7 +2,7 @@
   "name": "makehero",
   "version": "1.0.0",
   "description": "make a hero",
-  "main": "index.js",
+  "main": "makehero.js",
   "scripts": {
     "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
   },
