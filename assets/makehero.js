@@ -177,13 +177,13 @@ function addLuk () {
     console.log('Maxed Luck');
     return;
   }
-    luck += 3;
-    luckBar.style.width = luck + '%';
-    luckBar.style.display = 'inline';
-    luckBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
-    luckBar.style.opacity = '80%';
-    console.log('Increased Luck');
-    console.log(luck);
+  luck += 3;
+  luckBar.style.width = luck + '%';
+  luckBar.style.display = 'inline';
+  luckBar.style.backgroundImage = 'linear-gradient(#ffee10, #fff570)';
+  luckBar.style.opacity = '80%';
+  console.log('Increased Luck');
+  console.log(luck);
 }
 
 // _________________Subtract Stats _________________ //
@@ -192,7 +192,6 @@ function addLuk () {
 function subtractStr (e) {
   e.preventDefault();
   const strengthBar = document.getElementById('strBar');
-
 
   if (strength <= 0) {
     strengthBar.style.display = 'none';
@@ -267,7 +266,7 @@ function subtractInt (e) {
 // Subtract Luck
 function subtractLuk (e) {
   e.preventDefault();
-  const luckBar = document.getElementById('lukBar')
+  const luckBar = document.getElementById('lukBar');
 
   if (luck <= 0) {
     luckBar.style.display = 'none';
