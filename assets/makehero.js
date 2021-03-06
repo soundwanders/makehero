@@ -297,7 +297,6 @@ gladiatorBtn.addEventListener('click', function toggleGladiator () {
   gladiator.style.display = 'inline-block';
 
   samurai.style.display = 'none';
-
   ninja.style.display = 'none';
 }, false);
 
@@ -308,7 +307,6 @@ ninjaBtn.addEventListener('click', function toggleNinja () {
   ninja.style.display = 'inline-block';
 
   gladiator.style.display = 'none';
-
   samurai.style.display = 'none';
 }, false);
 
@@ -316,9 +314,9 @@ ninjaBtn.addEventListener('click', function toggleNinja () {
 const samuraiBtn = document.getElementById('samuraiBtn');
 
 samuraiBtn.addEventListener('click', function toggleSamurai () {
+  // display samurai
   samurai.style.display = 'inline-block';
 
   gladiator.style.display = 'none';
-
   ninja.style.display = 'none';
 }, false);
