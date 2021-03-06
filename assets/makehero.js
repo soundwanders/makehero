@@ -190,8 +190,9 @@ function addLuk () {
 
 // Subtract Strength
 function subtractStr (e) {
-  const strengthBar = document.getElementById('strBar');
   e.preventDefault();
+  const strengthBar = document.getElementById('strBar');
+
 
   if (strength <= 0) {
     strengthBar.style.display = 'none';
@@ -209,8 +210,8 @@ function subtractStr (e) {
 
 // Subtract Vitality
 function subtractVit (e) {
-  const vitalityBar = document.getElementById('vitBar');
   e.preventDefault();
+  const vitalityBar = document.getElementById('vitBar');
 
   if (vitality <= 0) {
     vitalityBar.style.display = 'none';
@@ -228,8 +229,8 @@ function subtractVit (e) {
 
 // Subtract Agility
 function subtractAgi (e) {
-  const agilityBar = document.getElementById('agiBar');
   e.preventDefault();
+  const agilityBar = document.getElementById('agiBar');
 
   if (agility <= 0) {
     agilityBar.style.display = 'none';
@@ -247,8 +248,8 @@ function subtractAgi (e) {
 
 // Subtract Intelligence
 function subtractInt (e) {
-  const intelligenceBar = document.getElementById('intBar');
   e.preventDefault();
+  const intelligenceBar = document.getElementById('intBar');
 
   if (intelligence <= 0) {
     intelligenceBar.style.display = 'none';
@@ -265,8 +266,8 @@ function subtractInt (e) {
 
 // Subtract Luck
 function subtractLuk (e) {
-  const luckBar = document.getElementById('lukBar');
   e.preventDefault();
+  const luckBar = document.getElementById('lukBar')
 
   if (luck <= 0) {
     luckBar.style.display = 'none';
