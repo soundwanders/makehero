@@ -204,21 +204,22 @@ body {
     #gladiator {
         display: none;
         position: fixed;
-        top: 10rem;
-        left: 54.5rem;
-        transform: scale(1.15);
-        -moz-transform:scale(1.15);
-        -ms-transform: scale(1.15);
-        -webkit-transform: scale(1.15);
+        top: -53rem;
+        left: -5rem;
+        transform: scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
         z-index: -4;
+        margin: 50% 50%;
     }
 
     /* Ninja */
     #ninja {
         display: none;
         position: fixed;
-        top: -65rem;
-        left: -23rem;
+        top: -67rem;
+        left: -22rem;
         transform: scale(0.75);
         -moz-transform:scale(0.75);
         -ms-transform: scale(0.75);
@@ -231,8 +232,8 @@ body {
     #samurai {
         display: none;
         position: fixed;
-        top: -52rem;
-        left: -12rem;
+        top: -54rem;
+        left: -11rem;
         transform: scale(0.8);
         -moz-transform:scale(0.8);
         -ms-transform: scale(0.8);
