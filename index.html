@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    <meta charset = "utf-8">
-    <meta name = "author" content = "soundwanders">
-    <meta name = "description" content = "Make a hero and choose their attributes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="soundwanders">
+    <meta name="description" content="Make a hero and choose their attributes">
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" type="text/css" href = "assets/herostyle.css">
-    <link rel = "stylesheet" type = "text/css" href = "assets/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/herostyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/normalize.css">
 
     <link rel="icon" type="image/png" sizes="32x32" href="/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,89 +28,92 @@
 <body>
 
 <!-- Project Container -->
-<div class = "projectContainer">
+<div class="projectContainer">
 
-<!-- Hero Display Container -->
-    <div class = "heroContainer">
-        <!-- Gladiator -->
-        <!-- Head  -->
-        <img class = "hero" id = "gladiator" src = "assets/images/gladiator/gladiator.png">
-
-        <!-- Ninja -->
-        <img class = "hero" id = "ninja" src = "assets/images/ninja/ninja-default.png">
-
-        <!-- Samurai -->
-        <img class = "hero" id = "samurai" src = "assets/images/samurai/samurai-default.png">
-    </div> 
-
-<!-- Stats Background Container -->
-    <div class = "statsContainer">
+    <!-- Stats Background Container -->
+    <div class="statsContainer">
 
         <!-- Stat Bars -->
-       <div class = "stats str" id = "strFrame">
+       <div class="stats str" id="strFrame">
             Strength &nbsp
-            <div id = "strBar">
+            <div id="strBar">
             </div>
         </div>
 
-        <div class = "stats vit" id = "vitFrame">
+        <div class="stats vit" id="vitFrame">
             Vitality &nbsp
-            <div id = "vitBar">
+            <div id="vitBar">
             </div>
         </div>
 
-        <div class = "stats agi" id = "agiFrame">
+        <div class="stats agi" id="agiFrame">
             Agility &nbsp
-            <div id = "agiBar">
+            <div id="agiBar">
             </div>
         </div>
 
-        <div class = "stats int" id = "intFrame">
+        <div class="stats int" id="intFrame">
             Intelligence &nbsp
-            <div id = "intBar">
+            <div id="intBar">
             </div>
         </div>
 
-        <div class = "stats luck" id = "lukFrame">
+        <div class="stats luck" id="lukFrame">
             Luck &nbsp
-            <div id = "lukBar">
+            <div id="lukBar">
             </div>
         </div>
     </div>
 
-<!-- Add & Subract Stats Buttons -->
+
+    <!-- Hero Display Container -->
+    <div class="heroContainer">
+        <!-- Gladiator -->
+        <!-- Head  -->
+        <img class="hero" id="gladiator" src="assets/images/gladiator/gladiator.png">
+
+        <!-- Ninja -->
+        <img class="hero" id="ninja" src="assets/images/ninja/ninja-default.png">
+
+        <!-- Samurai -->
+        <img class="hero" id="samurai" src="assets/images/samurai/samurai-default.png">
+    </div> 
+
+
+    <!-- Add & Subract Stats Buttons -->
 
     <!-- Strength -->
-    <button type = "button" class = "upButton" id = "upStr" title = "Increase Strength"> </button>
-    <button type = "button" class = "downButton" id = "downStr" title = "Decrease Strength"> </button>
+    <button type="button" class="upButton" id="upStr" title="Increase Strength"> </button>
+    <button type="button" class="downButton" id="downStr" title="Decrease Strength"> </button>
 
     <!-- Vitality -->
-    <button type = "button" class = "upButton" id = "upVit" title = "Increase Vitality"> </button>
-    <button type = "button" class = "downButton" id = "downVit" title = "Decrease Vitality"> </button>
+    <button type="button" class="upButton" id="upVit" title="Increase Vitality"> </button>
+    <button type="button" class="downButton" id="downVit" title="Decrease Vitality"> </button>
 
     <!-- Agility -->
-    <button type = "button" class = "upButton" id = "upAgi" title = "Increase Agility"> </button>
-    <button type = "button" class = "downButton" id = "downAgi" title = "Decrease Agility"> </button>
+    <button type="button" class="upButton" id="upAgi" title="Increase Agility"> </button>
+    <button type="button" class="downButton" id="downAgi" title="Decrease Agility"> </button>
 
     <!-- Intelligence -->
-    <button type = "button" class = "upButton" id = "upInt" title = "Increase Intelligence"> </button>
-    <button type = "button" class = "downButton" id = "downInt" title = "Decrease Intelligence"> </button>
+    <button type="button" class="upButton" id="upInt" title="Increase Intelligence"> </button>
+    <button type="button" class="downButton" id="downInt" title="Decrease Intelligence"> </button>
 
     <!-- Luck -->
-    <button type = "button" class = "upButton" id = "upLuk" title = "Increase Luck"> </button>
-    <button type = "button" class = "downButton" id = "downLuk" title = "Decrease Luck"> </button>
+    <button type="button" class="upButton" id="upLuk" title="Increase Luck"> </button>
+    <button type="button" class="downButton" id="downLuk" title="Decrease Luck"> </button>
 
-<!-- Hero Class Choices -->
-    <div class = "jobContainer">
-        <button type = "button" class = "heroBtn" id = "gladiatorBtn" title = "Select Gladiator">
+
+    <!-- Hero Class Choices -->
+    <div class="jobContainer">
+        <button type="button" class="heroBtn" id="gladiatorBtn" title="Select Gladiator" alt="Select Gladiator">
             Gladiator
         </button>
 
-        <button type = "button" class = "heroBtn" id = "ninjaBtn" title = "Select Ninja">
+        <button type="button" class="heroBtn" id="ninjaBtn" title="Select Ninja" alt="Select Ninja">
             Ninja
         </button>
 
-        <button type = "button" class = "heroBtn" id = "samuraiBtn" title = "Select Samurai">
+        <button type="button" class="heroBtn" id="samuraiBtn" title="Select Samurai" alt="Select Samurai">
             Samurai
         </button>
     </div>
@@ -118,6 +122,6 @@
 
 </body>
 
-<script src = "assets/makehero.js" type = "text/javascript"></script>
+<script src="assets/makehero.js" type="text/javascript"></script>
 
 </html>

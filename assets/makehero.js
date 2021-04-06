@@ -94,14 +94,14 @@ function addStr () {
   // bar remains "empty" until user adds stats
   const strengthBar = document.getElementById('strBar');
 
-  // if strength is 30 (max width) prevent additional strength
-  if (strength >= 30) {
-    strength = 30;
+  // if strength is 24 (max width) prevent additional strength
+  if (strength >= 24) {
+    strength = 24;
     console.log('Maxed Strength');
     return;
   }
 
-  // if width is less than max width (30%) , add increments of 3
+  // if width is less than max width (24%) , add increments of 3
   // and change display, width, background color of the strength bar
   // to represent the strength stat being increased
   strength += 3;
@@ -117,8 +117,8 @@ function addStr () {
 function addVit () {
   const vitalityBar = document.getElementById('vitBar');
 
-  if (vitality >= 30) {
-    vitality = 30;
+  if (vitality >= 24) {
+    vitality = 24;
     console.log('Maxed Vitality');
     return;
   }
@@ -136,8 +136,8 @@ function addVit () {
 function addAgi () {
   const agilityBar = document.getElementById('agiBar');
 
-  if (agility >= 30) {
-    agility = 30;
+  if (agility >= 24) {
+    agility = 24;
     console.log('Maxed Agility');
     return;
   }
@@ -154,8 +154,8 @@ function addAgi () {
 function addInt () {
   const intelligenceBar = document.getElementById('intBar');
 
-  if (intelligence >= 30) {
-    intelligence = 30;
+  if (intelligence >= 24) {
+    intelligence = 24;
     console.log('Maxed Intelligence');
     return;
   }
@@ -172,8 +172,8 @@ function addInt () {
 function addLuk () {
   const luckBar = document.getElementById('lukBar');
 
-  if (luck >= 30) {
-    luck = 30;
+  if (luck >= 24) {
+    luck = 24;
     console.log('Maxed Luck');
     return;
   }
