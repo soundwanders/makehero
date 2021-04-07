@@ -20,8 +20,7 @@ body {
 
   /* Project Containre */
 .projectContainer {
-    min-width: 80%;
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -199,55 +198,56 @@ body {
 /* Build A Hero Container */
 
 .heroContainer {
-    display: inline-block;
+    display: block;
     overflow: hidden;
 }
   /* Heros */
     /* Gladiator */
     #gladiator {
         display: none;
-        position: fixed;
-        top: -51rem;
-        left: -4.5rem;
+        position: absolute;
+        top: 28%;
+        left: 47%;
         transform: scale(1.08);
         -moz-transform:scale(1.08);
         -ms-transform: scale(1.08);
         -webkit-transform: scale(1.08);
         z-index: -4;
-        margin: 50% 50%;
+        margin: auto;
+        padding: auto;
     }
 
     /* Ninja */
     #ninja {
         display: none;
-        position: fixed;
-        top: -66rem;
-        left: -22rem;
+        position: absolute;
+        top: 1%;
+        left: 34%;
         transform: scale(0.75);
         -moz-transform:scale(0.75);
         -ms-transform: scale(0.75);
         -webkit-transform: scale(0.75);
         z-index: -4;
-        margin: 50% 50%;
+        margin: auto;
+        padding: auto;
     }
 
     /* Samurai */
     #samurai {
         display: none;
-        position: fixed;
-        top: -53rem;
-        left: -11rem;
+        position: absolute;
+        top: 24%;
+        left: 42%;
         transform: scale(0.78);
         -moz-transform:scale(0.78);
         -ms-transform: scale(0.78);
         -webkit-transform: scale(0.78);
         z-index: -4;
-        margin: 50% 50%;
-        padding: -50% -50%;
+        margin: auto;
+        padding: auto;
     }
 
 /* Hero Class Selection Buttons Container */
-
 .jobContainer {
     background: none;
     display: inline-block;
@@ -291,7 +291,7 @@ body {
 
     .heroBtn:hover::before {
     transform: scale(0.9);
-    box-shadow: 0 0 15px #fcff5c;
+    box-shadow: 0 0 10px #fcff5c;
     content: "";
     }
 
@@ -366,7 +366,7 @@ body {
     #downStr {
         top: 15vh;
         left: 12rem;
-        margin-right: 2px;
+        margin-right: 5px;
         margin-left: 10px;
     }
 
@@ -380,7 +380,7 @@ body {
     #downVit {
         top: 30vh;
         left: 12rem;
-        margin-right: 2px;
+        margin-right: 5px;
         margin-left: 10px;
     }
 
@@ -394,7 +394,7 @@ body {
     #downAgi {
         top: 45vh;
         left: 12rem;
-        margin-right: 2px;
+        margin-right: 5px;
         margin-left: 10px;
     }
 
@@ -408,7 +408,7 @@ body {
     #downInt {
         top: 60vh;
         left: 12rem;
-        margin-right: 2px;
+        margin-right: 5px;
         margin-left: 10px;
     }
 
@@ -422,6 +422,6 @@ body {
     #downLuk {
         top: 75vh;
         left: 12rem;
-        margin-right: 2px;
+        margin-right: 5px;
         margin-left: 10px;
     }
