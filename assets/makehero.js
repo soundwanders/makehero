@@ -281,7 +281,7 @@ function subtractLuk (e) {
   console.log(luck);
 }
 
-// _________________ Choose Hero Display ; Depends on Selected Class _________________ //
+// ____________ Choose Hero Display ; Depends on Selected Class _____________ //
 
 // Get Heros
 const gladiator = document.getElementById('gladiator');
