@@ -44,49 +44,58 @@ luckFrame.addEventListener('contextmenu', subtractLuk);
 
 // --- Add Event Listeners to Stat Buttons ---
 
-// Increase Strength Button
-const upStr = document.getElementById('upStr');
-upStr.addEventListener('click', addStr);
+const statUpButtons = document.querySelectorAll('.upButton');
+statUpButtons.forEach(upButton => upButton.addEventListener('click', function (e) { 
+  switch (e.target.id) {
+    case 'upStrength':
+      addStr();
+      break;
 
+    case 'upVitality':
+      addVit();
+    break;
+
+    case 'upAgility':
+      addAgi();
+      break;
+
+    case 'upIntelligence':
+      addInt();
+      break;
+    
+    case 'upLuck':
+      addLuk();
+      break;
+  }
+}));
+
+
+// Add event listener to each individual Stat Down Button because using switch statement to subtract stats...
+// creates conflicts with e.preventDefault() and right click context menu
 // Decrease Strength Button
-const downStr = document.getElementById('downStr');
+const downStr = document.getElementById('downStrength');
 downStr.addEventListener('click', subtractStr);
 
-// Increase Vitality Button
-const upVit = document.getElementById('upVit');
-upVit.addEventListener('click', addVit);
-
 // Decrease Vitality Button
-const downVit = document.getElementById('downVit');
+const downVit = document.getElementById('downVitality');
 downVit.addEventListener('click', subtractVit);
 
-// Increase Agility Button
-const upAgi = document.getElementById('upAgi');
-upAgi.addEventListener('click', addAgi);
-
 // Decrease Agility Button
-const downAgi = document.getElementById('downAgi');
+const downAgi = document.getElementById('downAgility');
 downAgi.addEventListener('click', subtractAgi);
 
-// Increase Intelligence Button
-const upInt = document.getElementById('upInt');
-upInt.addEventListener('click', addInt);
-
 // Decrease Intelligence Button
-const downInt = document.getElementById('downInt');
+const downInt = document.getElementById('downIntelligence');
 downInt.addEventListener('click', subtractInt);
 
-// Increase Luck Button
-const upLuk = document.getElementById('upLuk');
-upLuk.addEventListener('click', addLuk);
-
 // Decrease Luck Button
-const downLuk = document.getElementById('downLuk');
+const downLuk = document.getElementById('downLuck');
 downLuk.addEventListener('click', subtractLuk);
-//
 
-// _________________FUNCTIONS_________________ //
-// --- Add Stats ---
+
+
+// ___________ FUNCTIONS ___________ //
+//  ADD STATS
 
 // Add Strength
 function addStr () {
@@ -205,6 +214,7 @@ function subtractStr (e) {
   strengthBar.style.opacity = '80%';
   console.log('Decreased Strength');
   console.log(strength);
+  document.oncontextmenu = false;
 }
 
 // Subtract Vitality

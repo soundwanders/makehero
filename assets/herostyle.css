@@ -357,13 +357,13 @@ body {
     }
 
 /* Strength Buttons */
-    #upStr {
+    #upStrength {
         top: 15vh;
         margin-right: 10px;
         margin-left: 2px;
     }
 
-    #downStr {
+    #downStrength {
         top: 15vh;
         left: 12rem;
         margin-right: 5px;
@@ -371,13 +371,13 @@ body {
     }
 
 /* Vitality Buttons */
-    #upVit {
+    #upVitality {
         top: 30vh;
         margin-right: 10px;
         margin-left: 2px;
     }
 
-    #downVit {
+    #downVitality {
         top: 30vh;
         left: 12rem;
         margin-right: 5px;
@@ -385,13 +385,13 @@ body {
     }
 
 /* Agility Buttons */
-    #upAgi {
+    #upAgility {
         top: 45vh;
         margin-right: 10px;
         margin-left: 2px;
     }
 
-    #downAgi {
+    #downAgility {
         top: 45vh;
         left: 12rem;
         margin-right: 5px;
@@ -399,13 +399,13 @@ body {
     }
 
 /* Intelligence Buttons */
-    #upInt {
+    #upIntelligence {
         top: 60vh;
         margin-right: 10px;
         margin-left: 2px;
     }
 
-    #downInt {
+    #downIntelligence {
         top: 60vh;
         left: 12rem;
         margin-right: 5px;
@@ -413,13 +413,13 @@ body {
     }
 
 /* Luck Buttons */
-    #upLuk {
+    #upLuck {
         top: 75vh;
         margin-right: 10px;
         margin-left: 2px;
     }
 
-    #downLuk {
+    #downLuck {
         top: 75vh;
         left: 12rem;
         margin-right: 5px;
