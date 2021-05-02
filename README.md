@@ -4,8 +4,8 @@
   - MakeHero is a simple web app that allows the user to choose their hero and select their attributes
     - Hero choices: Gladiator, Ninja, or Samurai
   - Created with HTML, CSS, and JavaScript
-  - To ADD/SUBTRACT stats, you can use the round buttons that are adjacent to the stat bars.
-  - If you click on the actual stat bars, you are able to ADD stats with Left mouse click, and SUBTRACT stats with Right mouse click
+  - To Add and Subtract stats, you can use the round buttons that are adjacent to the stat bars.
+  - If you click on the actual stat bar displays, you are able to Add stats with Left mouse click, and Subtract stats with the Right mouse click
   - For stat bar manipulation, the CSS background-color is changed on each click to be added or subtracted in increments of 3%
   - Hide/Show heros depending on which hero class is selected. Style => display set to none if it is not a selected class.
 
